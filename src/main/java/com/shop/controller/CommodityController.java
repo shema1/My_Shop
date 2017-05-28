@@ -37,11 +37,11 @@ public class CommodityController {
 	}
 	
 	@PostMapping("/addCommodity")
-	public String registrationCommodity(@ModelAttribute Commodity commodity{
+	public String registrationCommodity(@ModelAttribute Commodity commodity){
 
 //		Category category = categoryService.findOne(ct);
 		
-		
+		//asdfas
 
 		
 		return "index";
