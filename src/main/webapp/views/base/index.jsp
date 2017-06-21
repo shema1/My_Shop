@@ -6,19 +6,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
-<body>
-<h1 style="text-align: center;">Welcome i my shop</h1>
+<body class="bbb">
+
 
 <div> 
 
-	<a href="/user">registration</a>
-	<a href="/addCommodity">addCommodity</a>
-	<a href="/addCategory">addCategory</a>
-	<a href="/addOrder">addOrder</a>
+
 	
-	
-	
+	sfsdfsf
 	
 	
 	

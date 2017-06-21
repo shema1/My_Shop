@@ -11,6 +11,9 @@ import com.shop.entity.Category;
 import com.shop.entity.Commodity;
 import com.shop.service.CategoryService;
 import com.shop.service.CommodityService;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.util.ArrayList;
 
 @Controller
 public class CommodityController {
@@ -33,18 +36,22 @@ public class CommodityController {
 		model.addAttribute("allCommodity", commodityService.findAll());
 		model.addAttribute("Commoditis", new Commodity());
 
-		return"addCommodity";
+		return"views-admin-addCommodity";
 	}
 	
 	@PostMapping("/addCommodity")
-	public String registrationCommodity(@ModelAttribute Commodity commodity){
+	public String registrationCommodity(@ModelAttribute Commodity commodity,
+										@RequestParam ArrayList<Integer> ct,
+										@RequestParam MultipartFile image){
 
 //		Category category = categoryService.findOne(ct);
 		
 		//asdfas
 
+		commodityService.save(commodity,ct,image);
+
 		
-		return "index";
+		return "redirect:/addCommodity";
 		
 		
 		
@@ -54,5 +61,11 @@ public class CommodityController {
 		
 		commodityService.delete(id);
 		return "redirect:/addCommodity";
+	}
+
+	@GetMapping("/viewCommodity")
+	public String allCommodity(Model model){
+		model.addAttribute("allCommoditys", commodityService.findAll());
+		return "views-base-viewCommodity";
 	}
 }

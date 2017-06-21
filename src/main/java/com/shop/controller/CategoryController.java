@@ -21,7 +21,7 @@ public class CategoryController {
 			model.addAttribute("Category", categoryService.findAll());
 			model.addAttribute("Categoris", new Category());
 
-				return "addCategory";
+				return "views-admin-addCategory";
 		}
 		
 	

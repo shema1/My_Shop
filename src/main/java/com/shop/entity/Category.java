@@ -1,12 +1,8 @@
 package com.shop.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Entity
@@ -18,8 +14,9 @@ public class Category {
 	private String type;
 	
 	
-	@ManyToOne
-	private Commodity commodity;
+	@ManyToMany
+	@JoinTable (name = "categorys_commodity", joinColumns = @JoinColumn(name = "categorys_id"), inverseJoinColumns = @JoinColumn(name = "commodity_id"))
+	private List<Commodity> commodity = new ArrayList<Commodity>();
 	
 	public Category() {
 		// TODO Auto-generated constructor stub
@@ -30,11 +27,11 @@ public class Category {
 		this.type = type;
 	}
 
-	public Commodity getCommodity() {
+	public List<Commodity> getCommodity() {
 		return commodity;
 	}
 
-	public void setCommodity(Commodity commodity) {
+	public void setCommodity(List<Commodity> commodity) {
 		this.commodity = commodity;
 	}
 

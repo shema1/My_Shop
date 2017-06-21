@@ -1,9 +1,17 @@
 package com.shop.serviceImpl;
 
+import java.security.Principal;
 import java.util.List;
 
+import com.shop.dao.CommodityDao;
+import com.shop.entity.Commodity;
+import com.shop.entity.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.shop.dao.UserDao;
@@ -11,15 +19,26 @@ import com.shop.entity.User;
 import com.shop.service.UserService;
 
 
-@Service
-public class UserServiceImpl implements UserService {
+@Service("userDetailsService")
+public class UserServiceImpl implements UserService, UserDetailsService {
 
 	@Autowired
 	private UserDao userDao;
+
+	@Autowired
+	private CommodityDao commodityDao;
+
+	@Autowired
+	private BCryptPasswordEncoder encoder;
 	
 	
 	public void save(User user) {
-		// TODO Auto-generated method stub
+//		validator.validate(user);
+//		user.setRole(Role.ROLE_USER);
+//		user.setPassword(encoder.encode(user.getPassword()));
+//		userDao.save(user);
+		user.setRole(Role.ROLE_USER);
+		user.setPassword(encoder.encode(user.getPassword()));
 		userDao.save(user);
 	}
 
@@ -45,6 +64,49 @@ public class UserServiceImpl implements UserService {
 		userDao.save(user);
 	}
 
-	
+	@Override
+	public void addInBasket(Principal principal, int commodityId) {
+		User user = userDao.findUserWithCommodity(Integer.parseInt(principal.getName()));
+
+		Commodity commodity = commodityDao.findOne(commodityId);
+
+		user.getCommodities().add(commodity);
+		userDao.save(user);
+
+
+
+	}
+
+	@Override
+	public User findByUuid(String uuid) {
+		return  userDao.findByUuid(uuid);
+	}
+
+
+	@Override
+	public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
+		return userDao.findByName(name);
+	}
+
+	@Override
+	public void like(Principal principal, int id) {
+		User user = userDao.findUserWithCommodity(Integer.parseInt(principal.getName()));
+
+		Commodity commodity = commodityDao.findOne(id);
+
+		user.getCommodities().add(commodity);
+
+		userDao.save(user);
+
+
+	}
+
+	@Override
+	public User findUserWithCommodity(int id) {
+		return userDao.findUserWithCommodity(id);
+	}
+
+
+
 
 }

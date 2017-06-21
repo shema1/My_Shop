@@ -8,6 +8,7 @@ import com.shop.entity.Commodity;
 
 
 public interface CommodityDao extends  JpaRepository<Commodity, Integer>{
-	
+
+
 
 }

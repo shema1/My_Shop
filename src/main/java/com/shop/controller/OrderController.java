@@ -1,5 +1,6 @@
 package com.shop.controller;
 
+import java.security.Principal;
 import java.time.LocalDate;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,29 +25,52 @@ public class OrderController {
 	private CommodityService commodityService; 
 	@Autowired
 	private UserService userService ;
-	
-	
+
+
 	@GetMapping("/addOrder")
-	public String Order(Model model){
+	public String Order(Model model, Principal principal){
 		model.addAttribute("Order", orderssService.findAll());
 		model.addAttribute("selCommodity", commodityService.findAll() );
 		model.addAttribute("selUser", userService.findAll());
-		return "addOrder";
+		model.addAttribute("user",userService.findUserWithCommodity(Integer.parseInt(principal.getName())));
+		return "views-user-addOrder";
 	}
-	
-	@PostMapping("/addOrder")
-	public String addOrder(@RequestParam int com1,
-							@RequestParam int user,
-							@RequestParam LocalDate date1){
-		orderssService.save(new Orderss(date1),user);
-		return "redirect:/addOrder";
+
+	@GetMapping("/inBasket/{id}")
+	public String buy (Principal principal, @PathVariable int id){
+
+		orderssService.inBasket(principal , id);
+		return "redirect:/";
 	}
-	
-	@GetMapping("/deleteOrder/{id}")
-	public String delete(@PathVariable int id){
-		
-		orderssService.delete(id);;
-		return "redirect:/addOrder";
+
+	@GetMapping("/deleteFromBasket/{userid}/{comid}")
+public String deleteFromBasket (@PathVariable int userid,
+								@PathVariable int comid){
+
+		orderssService.deleteFromBasket(userid, comid);
+		return "redirect:/";
 	}
+
+	@PostMapping("/buy/{userid}")
+	public String buy (@PathVariable int userid){
+	orderssService.buy(userid);
+	return "redirect:/addOrder";
+	}
+
+//
+//	@PostMapping("/addOrder")
+//	public String addOrder(@RequestParam int com1,
+//							@RequestParam int user,
+//							@RequestParam LocalDate date1){
+//		orderssService.save(new Orderss(date1),user);
+//		return "redirect:/addOrder";
+//	}
+//
+//	@GetMapping("/deleteOrder/{id}")
+//	public String delete(@PathVariable int id){
+//
+//		orderssService.delete(id);;
+//		return "redirect:/addOrder";
+//	}
 }
 

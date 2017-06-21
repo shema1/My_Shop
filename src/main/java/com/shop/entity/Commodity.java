@@ -1,5 +1,6 @@
 package com.shop.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -21,15 +22,25 @@ public class Commodity {
 	
 	private String name;
 	private int price;
-	
-	@OneToMany(mappedBy= "commodity")
-	private List<Category> category;
+	private String pathImage;
 
 	@ManyToMany
-	@JoinTable(name = "orders_commodity", joinColumns = @JoinColumn(name = "commodity_id"), inverseJoinColumns = @JoinColumn(name = "orders_id"))
-	private List<Orderss> orderss;
+	@JoinTable(name = "categorys_commodity",
+			joinColumns = @JoinColumn(name = "commodity_id"),
+			inverseJoinColumns = @JoinColumn(name = "categorys_id"))
+	private List<Category> category = new ArrayList<Category>();
 
+	@ManyToMany
+	@JoinTable(name = "orders_commodity",
+			joinColumns = @JoinColumn(name = "commodity_id"),
+			inverseJoinColumns = @JoinColumn(name = "orders_id"))
+	private List<Orderss> orderss = new ArrayList<Orderss>();
 
+	@ManyToMany
+	@JoinTable(name = "commodity_user",
+			joinColumns = @JoinColumn(name = "id_commodity"),
+			inverseJoinColumns = @JoinColumn (name = "id_user"))
+	private List<User> users = new ArrayList<User>();
 	public Commodity() {
 		// TODO Auto-generated constructor stub
 	}
@@ -40,9 +51,6 @@ public class Commodity {
 		this.name = name;
 		this.price = price;
 	}
-
-
-
 
 	public int getId() {
 		return id;
@@ -95,12 +103,11 @@ public class Commodity {
 	}
 
 
+	public String getPathImage() {
+		return pathImage;
+	}
 
-
-
-
-
-	
-	
-	
+	public void setPathImage(String pathImage) {
+		this.pathImage = pathImage;
+	}
 }
