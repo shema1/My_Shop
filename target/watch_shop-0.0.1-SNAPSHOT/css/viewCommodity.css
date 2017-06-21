@@ -1,0 +1,18 @@
+.border{
+    border: 2px solid black;
+    height:100px;
+    margin: 5%;
+}
+
+.color{
+    background-color: #fafafa;
+}
+
+.bak{
+    background-color: #444444;
+    display: inline;
+}
+
+/*.proba{*/
+    /*z-index: 1000;*/
+/*}*/
