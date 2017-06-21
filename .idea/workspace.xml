@@ -1204,7 +1204,7 @@
       <workItem from="1497864087562" duration="908000" />
       <workItem from="1497942279286" duration="9721000" />
       <workItem from="1498032812034" duration="2260000" />
-      <workItem from="1498058011414" duration="329000" />
+      <workItem from="1498058011414" duration="512000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1495969148499</created>
@@ -1227,11 +1227,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498058142451</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="git remote add origin https://github.com/shema1/watch_shop4.git&#10;git push -u origin master">
+      <created>1498058350099</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1498058350099</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129013000" />
+    <option name="totallyTimeSpent" value="129196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
@@ -1275,6 +1282,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
