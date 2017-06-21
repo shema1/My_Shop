@@ -35,6 +35,7 @@ public class CommodityServiceImpl implements CommodityService{
 
 		File filePath = new File(path);
 
+
 		try {
 			filePath.mkdirs();
 			image.transferTo(filePath);
