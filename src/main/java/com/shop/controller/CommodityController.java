@@ -50,6 +50,7 @@ public class CommodityController {
 
 		commodityService.save(commodity,ct,image);
 
+
 		
 		return "redirect:/addCommodity";
 		
