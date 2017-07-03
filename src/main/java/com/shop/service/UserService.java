@@ -18,4 +18,5 @@ public interface UserService {
 	User findByUuid (String uuid);
 	void like (Principal principal, int id);
 	User findUserWithCommodity(int id);
+	User findUserWithHistory(int id);
 }

@@ -1,0 +1,27 @@
+.photo{
+    width: 70%;
+    height: 40%;
+
+}
+
+/*ol > li {*/
+    /*height: 20px;*/
+    /*margin-right: 0px;*/
+    /*padding: 0 20px;*/
+    /*display: inline;*/
+/*}*/
+
+
+.asdf {
+    margin: 2%;
+    border: solid #29314e;
+    background: darkslategrey;
+    color: white;
+}
+
+li:last-child {
+     border-right: solid;
+}
+.back{
+    background-image: url("http://world-of-mods.ucoz.org/frontsite.jpg");
+}

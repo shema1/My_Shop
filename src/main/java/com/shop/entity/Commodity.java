@@ -22,7 +22,9 @@ public class Commodity {
 	
 	private String name;
 	private int price;
+	private String info;
 	private String pathImage;
+
 
 	@ManyToMany
 	@JoinTable(name = "categorys_commodity",
@@ -50,6 +52,22 @@ public class Commodity {
 		super();
 		this.name = name;
 		this.price = price;
+	}
+
+	public String getInfo() {
+		return info;
+	}
+
+	public void setInfo(String info) {
+		this.info = info;
+	}
+
+	public List<User> getUsers() {
+		return users;
+	}
+
+	public void setUsers(List<User> users) {
+		this.users = users;
 	}
 
 	public int getId() {

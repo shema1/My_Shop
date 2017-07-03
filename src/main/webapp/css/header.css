@@ -35,9 +35,6 @@ header > nav > ul > li {
     display: inline;
 }
 
-li:last-child {
-    border-right: none;
-}
 
 li a {
     text-decoration: none;
@@ -89,10 +86,4 @@ p {
     color: black;
 }
 
-/*.bor{*/
-    /*border-style:inset;*/
-    /*border-color: #DC3B3B;*/
-    /*background-color: #DC3B3B;*/
-    /*border-radius: 10px;*/
 
-/*}*/

@@ -31,7 +31,7 @@ public class CommodityServiceImpl implements CommodityService{
 
 		String path = System.getProperty("catalina.home") + "/resources/"
 				+ commodity.getName()  + "/" + image.getOriginalFilename();
-		commodity.setPathImage("resources/" + commodity.getName() + "/" + image.getContentType() );
+		commodity.setPathImage("resources/" + commodity.getName() + "/" + image.getOriginalFilename() );
 
 		File filePath = new File(path);
 

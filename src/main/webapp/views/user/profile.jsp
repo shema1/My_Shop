@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%--
   Created by IntelliJ IDEA.
   User: Mykola
@@ -9,5 +9,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
+<%--<ul>--%>
+    <%--<c:forEach var="history" items="${qwer.ordersses}">--%>
+       <%--<li> ${history.date}</li>--%>
 
+    <%--</c:forEach>--%>
+<%--</ul>--%>
 
+<ul>
+    cnh
+    <c:forEach var="qaz" items="${qwer.ordersses}">
+        <li> ${qaz.date}</li>
+    </c:forEach>
+</ul>

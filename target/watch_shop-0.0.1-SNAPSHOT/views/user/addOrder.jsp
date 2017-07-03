@@ -23,6 +23,13 @@ ${user.name}
 </form:form>
 
 
+<ul>
+<c:forEach var="history" items="${selUser.ordersses}">
+${history.date}
+
+</c:forEach>
+</ul>
+
 
 
 

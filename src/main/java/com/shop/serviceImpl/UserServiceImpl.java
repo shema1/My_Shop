@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
 	public List<User> findAll() {
 		// TODO Auto-generated method stub
-		
+
 		return userDao.findAll();
 	}
 
@@ -107,6 +107,8 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 	}
 
 
-
-
+	@Override
+	public User findUserWithHistory(int id) {
+		return userDao.findUserWithHistory(id);
+	}
 }

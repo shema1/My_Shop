@@ -7,8 +7,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+    <link rel="stylesheet" href="/css/addCategory.css">
 </head>
-<body>
+<body class="color">
 
 
     <sf:form modelAttribute="Categoris" action="/addCategory" method="post">

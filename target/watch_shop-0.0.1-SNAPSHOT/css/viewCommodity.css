@@ -5,14 +5,31 @@
 }
 
 .color{
-    background-color: #fafafa;
+    background-image: url("http://world-of-mods.ucoz.org/frontsite.jpg");
 }
 
 .bak{
     background-color: #444444;
     display: inline;
 }
+.pos{
+    vertical-align: middle;
+}
 
 /*.proba{*/
     /*z-index: 1000;*/
 /*}*/
+
+.photo{
+
+    width: 100%;
+    height: 45%;
+    margin: 2%;
+
+}
+.asd{
+    margin: 2%;
+    border: solid #29314e;
+    background: darkslategrey;
+    color: white;
+}

@@ -58,6 +58,8 @@ private UserService userService;
 	public String profile(Principal principal, Model model){
 		//model.addAttribute("user",userService.findOne(Integer.parseInt(principal.getName())));
 		model.addAttribute("user",userService.findUserWithCommodity(Integer.parseInt(principal.getName())));
+		model.addAttribute("qwer",userService.findUserWithHistory(Integer.parseInt(principal.getName())));
+
 
 		return "views-user-profile";
 	}

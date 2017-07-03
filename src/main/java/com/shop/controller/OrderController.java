@@ -31,7 +31,7 @@ public class OrderController {
 	public String Order(Model model, Principal principal){
 		model.addAttribute("Order", orderssService.findAll());
 		model.addAttribute("selCommodity", commodityService.findAll() );
-		model.addAttribute("selUser", userService.findAll());
+		model.addAttribute("selUser", userService.findUserWithHistory(Integer.parseInt(principal.getName())));
 		model.addAttribute("user",userService.findUserWithCommodity(Integer.parseInt(principal.getName())));
 		return "views-user-addOrder";
 	}
@@ -57,20 +57,6 @@ public String deleteFromBasket (@PathVariable int userid,
 	return "redirect:/addOrder";
 	}
 
-//
-//	@PostMapping("/addOrder")
-//	public String addOrder(@RequestParam int com1,
-//							@RequestParam int user,
-//							@RequestParam LocalDate date1){
-//		orderssService.save(new Orderss(date1),user);
-//		return "redirect:/addOrder";
-//	}
-//
-//	@GetMapping("/deleteOrder/{id}")
-//	public String delete(@PathVariable int id){
-//
-//		orderssService.delete(id);;
-//		return "redirect:/addOrder";
-//	}
+
 }
 

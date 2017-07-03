@@ -23,28 +23,49 @@
     <link rel="stylesheet" href="/css/viewCommodity.css">
     <title>Title</title>
 </head>
-<body class="color">
+<body class="color ">
 
-<div  class="row ">
-    <div class="col-xs-12 col-sm-6 col-md-1 bak "></div>
-  <div class="col-xs-12 col-sm-6 col-md-10 ">
-
-    <nav class=" proba">
+<ul>
     <q:forEach var="cm" items="${allCommoditys}">
-
-        <li class="border col-xs-1 col-sm-3 col-md-3"> ${cm.name}, ${cm.price}
-            <sec:authorize access="hasAnyRole('ROLE_USER, ROLE_ADMIN')">
-             <a href="/inBasket/${cm.id}">| in basket |</a>
-        </sec:authorize>
+        <li class="row asd">
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <img class="photo" src="${cm.pathImage}" alt="cm.pathImage">
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                    ${cm.name}, ${cm.price}
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <sec:authorize access="hasAnyRole('ROLE_USER, ROLE_ADMIN')">
+                <a href="/inBasket/${cm.id}">| in basket |</a>
+                </sec:authorize>
+            </div>
         </li>
-
     </q:forEach>
-    </nav>
+</ul>
+
+    <%--<q:forEach var="cm" items="${allCommoditys}">--%>
+
+        <%--<li class="row border">--%>
+           <%--<div class="col-xs-1 col-sm-3 col-md-4">--%>
+               <%--<img class="photo" src="${cm.pathImage}" alt="cm.pathImage">--%>
+           <%--</div>--%>
+            <%--<div class="col-xs-1 col-sm-3 col-md-4">--%>
+                <%--${cm.name}, ${cm.price}--%>
+            <%--</div>--%>
+            <%--<div class="col-xs-1 col-sm-3 col-md-4">--%>
+            <%--<sec:authorize access="hasAnyRole('ROLE_USER, ROLE_ADMIN')">--%>
+             <%--<a href="/inBasket/${cm.id}">| in basket |</a>--%>
+        <%--</sec:authorize>--%>
+            <%--</div>--%>
+        <%--</li>--%>
+
+    <%--</q:forEach>--%>
 
 
-  </div>
-    <div class="col-xs-12 col-sm-6 col-md-1  bak"></div>
-</div>
+
+
+
+
 
 </body>
 </html>
