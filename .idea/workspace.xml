@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abcff806-5474-412d-a36e-d1f837714d58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/serviceImpl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/serviceImpl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/controller/UserController.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/service/UserService.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/serviceImpl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/serviceImpl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/controller/CommodityController.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/CommodityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/service/CommodityService.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/service/CommodityService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/serviceImpl/CommodityServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/serviceImpl/CommodityServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/controller/CommodityController.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/controller/CommodityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/service/CommodityService.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/service/CommodityService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/serviceImpl/CommodityServiceImpl.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/serviceImpl/CommodityServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/controller/CommodityController.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/controller/CommodityController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/service/CommodityService.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/CommodityService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CommodityServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CommodityServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/viewCommodity.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/viewCommodity.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/base/viewCommodity.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/base/viewCommodity.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/css/index.css" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/views/base/index.jsp" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/views/base/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/servlet-context.xml" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/servlet-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/css/viewCommodity.css" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/css/viewCommodity.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/views/base/viewCommodity.jsp" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/views/base/viewCommodity.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1404,7 +1399,7 @@
       <workItem from="1498243125647" duration="755000" />
       <workItem from="1498323465880" duration="1757000" />
       <workItem from="1499068199766" duration="15189000" />
-      <workItem from="1499153461962" duration="21831000" />
+      <workItem from="1499153461962" duration="22345000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1495969148499</created>
@@ -1504,11 +1499,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499179592242</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="pagination">
+      <created>1499182386312</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1499182386312</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204228000" />
+    <option name="totallyTimeSpent" value="204742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
@@ -1627,7 +1629,8 @@
     <MESSAGE value="git@github.com:shema1/My_project.git" />
     <MESSAGE value="1" />
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="pagination" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
