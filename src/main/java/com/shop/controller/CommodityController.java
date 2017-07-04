@@ -64,9 +64,53 @@ public class CommodityController {
 		return "redirect:/addCommodity";
 	}
 
+	@GetMapping("/updateCommodity/{commodityId}")
+	public String update(@PathVariable int commodityId,
+						Model  model){
+
+		model.addAttribute("commodity", commodityService.findOne(commodityId));
+		model.addAttribute("allCategory", categoryService.findAll());
+		return "views-admin-updateCommodity";
+	}
+
+	@PostMapping("/updateCommodity/{commodityId}")
+	public String updateCommodity(@PathVariable int commodityId,
+								  @RequestParam String name,
+								  @RequestParam int price,
+								  @RequestParam String info,
+								  @RequestParam ArrayList<Integer> ct,
+								  @RequestParam MultipartFile pathImage) {
+		Commodity commodity = new Commodity();
+		commodity.setId(commodityId);
+		commodity.setName(name);
+		commodity.setPrice(price);
+		commodity.setInfo(info);
+
+		commodityService.save(commodity,ct,pathImage);
+
+		return  "redirect:/addCommodity";
+
+	}
+
+
 	@GetMapping("/viewCommodity")
 	public String allCommodity(Model model){
 		model.addAttribute("allCommoditys", commodityService.findAll());
+
 		return "views-base-viewCommodity";
 	}
+
+//	@PostMapping("/updateCountry/{countryId}")
+//	public String updateCountry(@PathVariable int countryId,
+//								@RequestParam String name,
+//								@RequestParam MultipartFile image){
+//
+//		Country country = new Country(name);
+//		country.setId(countryId);
+//
+//		countryService.update(country, image);
+//
+//		return "redirect:/country";
+//
+//	}
 }

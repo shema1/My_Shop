@@ -48,11 +48,7 @@ public class Commodity {
 	}
 
 	
-	public Commodity(String name, int price) {
-		super();
-		this.name = name;
-		this.price = price;
-	}
+
 
 	public String getInfo() {
 		return info;
