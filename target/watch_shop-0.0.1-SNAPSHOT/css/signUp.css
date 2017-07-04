@@ -240,6 +240,9 @@ form button:hover {
     font-size: 15px;
     text-align: center;
 }
+li{
+    text-align: left;
+}
 
 @-webkit-keyframes cd-fade-in {
     0% {

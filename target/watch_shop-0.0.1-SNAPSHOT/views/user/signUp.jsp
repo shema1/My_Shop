@@ -47,12 +47,13 @@
 		<li data-content="login" class="selected">
 			<form:form action="/login" method="post" name="login-form">
 				<div class="form-fild">
-					<label for="username">username</label>
-					<input type="text" name="username">
+					<span style="color: #DC3B3B">${usernameException}</span>
+					<label for=""></label>
+					<input type="text" placeholder="username" name="username">
 				</div>
 				<div class="form-fild">
-					<label for="password">password</label>
-					<input type="password" name="password">
+					<label for=""></label>
+					<input type="password" placeholder="password" name="password">
 				</div>
 				<span class="error"></span>
 				<button type="submit">Submit</button>
@@ -61,16 +62,16 @@
 		<li data-content="signup">
 			<form:form  action="/signUp" method="post" name="signup-form">
 				<div class="form-fild">
-					<label for="susername"></label>
-					<input type="text" name="name">
+					<label for="name"></label>
+					<input type="text" placeholder="username" name="name">
 				</div>
 				<div class="form-fild">
-					<label for="spassword"></label>
-					<input type="email" name="email">
+					<label for="email"></label>
+					<input type="email" placeholder="email" name="email" >
 				</div>
 				<div class="form-fild">
-					<label for="spassword2"></label>
-					<input type="password" name="password">
+					<label for=""></label>
+					<input type="password" placeholder="pass" name="password">
 				</div>
 				<span class="error"></span>
 				<button type="submit">Submit</button>
@@ -80,4 +81,30 @@
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

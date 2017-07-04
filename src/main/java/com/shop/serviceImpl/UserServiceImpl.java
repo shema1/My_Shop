@@ -6,8 +6,10 @@ import java.util.List;
 import com.shop.dao.CommodityDao;
 import com.shop.entity.Commodity;
 import com.shop.entity.Role;
+import com.shop.validator.Validator;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -26,17 +28,18 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 	private UserDao userDao;
 
 	@Autowired
+	@Qualifier("userValidator")
+	private Validator validator;
+
+	@Autowired
 	private CommodityDao commodityDao;
 
 	@Autowired
 	private BCryptPasswordEncoder encoder;
 	
 	
-	public void save(User user) {
-//		validator.validate(user);
-//		user.setRole(Role.ROLE_USER);
-//		user.setPassword(encoder.encode(user.getPassword()));
-//		userDao.save(user);
+	public void save(User user) throws Exception {
+		validator.validete(user);
 		user.setRole(Role.ROLE_USER);
 		user.setPassword(encoder.encode(user.getPassword()));
 		userDao.save(user);
@@ -111,4 +114,20 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 	public User findUserWithHistory(int id) {
 		return userDao.findUserWithHistory(id);
 	}
+
+	@Override
+	public User findByName(String name) {
+		return userDao.findByName(name);
+
+	}
+
+
+
+
+
+
+
+
+
+
 }

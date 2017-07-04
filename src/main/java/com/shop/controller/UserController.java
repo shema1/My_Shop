@@ -1,6 +1,7 @@
 package com.shop.controller;
 
 import com.shop.service.MailSenderService;
+import com.shop.validator.UserValidator.UserValidatorMessenges;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -35,8 +36,16 @@ private UserService userService;
 		String uuid = UUID.randomUUID().toString();//asdjcniq3nv3oriv9q3j0eic9wuEQDCQW
 
 		user.setUuid(uuid);
-		
-		userService.save(user);
+
+		try {
+			userService.save(user);
+		} catch (Exception e) {
+			if(e.getMessage().equals(UserValidatorMessenges.EMPTY_USERNAME_FIELD)||
+					e.getMessage().equals(UserValidatorMessenges.USERNAME_ALREDY_EXIST)){
+				model.addAttribute("usernameException", e.getMessage());
+			}
+		return  "views-user-signUp";
+		}
 
 		String theme = "thank's for registration";
 		String mailBody =

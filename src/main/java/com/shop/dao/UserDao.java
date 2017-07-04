@@ -20,8 +20,9 @@ public interface UserDao extends  JpaRepository<User, Integer> {
     @Query("select u from User u left join fetch u.ordersses where u.id=:id")
     User findUserWithHistory(@Param("id")int id);
 
-
    @Query("select  u from User u where u.uuid =:uuid")
     User findByUuid (@Param("uuid")String uuid);
+
+
 
 }

@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 public interface UserService {
 
 	
-	void save(User user);
+	void save(User user) throws Exception;
 	List<User> findAll();
 	User findOne(int id);
 	void delete(int id); 
@@ -19,4 +19,5 @@ public interface UserService {
 	void like (Principal principal, int id);
 	User findUserWithCommodity(int id);
 	User findUserWithHistory(int id);
+	User findByName(String name);
 }

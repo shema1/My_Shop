@@ -60,6 +60,7 @@
 	</div>
 	<div class="col-xs-4 col-sm-4 col-md-4">
 	<a href="/deleteCommodity/${cm.id}">  Delete</a>
+		<a href="/updateCommodity/${cm.id}">update</a>
 	</div>
 </li>
 </x:forEach>
