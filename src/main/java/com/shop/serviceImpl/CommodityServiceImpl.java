@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.shop.dao.CategoryDao;
@@ -74,6 +76,9 @@ public class CommodityServiceImpl implements CommodityService{
 		commodityDao.save(commodity);
 	}
 
-	
 
+	@Override
+	public Page<Commodity> findAllPages(Pageable pageable) {
+		return commodityDao.findAll(pageable);
+	}
 }

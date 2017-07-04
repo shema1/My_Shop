@@ -26,7 +26,7 @@
 <body class="color ">
 
 <ul>
-    <q:forEach var="cm" items="${allCommoditys}">
+    <q:forEach var="cm" items="${allCommoditys.content}">
         <li class="row asd">
             <div class="col-xs-4 col-sm-4 col-md-4">
                 <img class="photo" src="${cm.pathImage}" alt="cm.pathImage">
@@ -42,6 +42,15 @@
         </li>
     </q:forEach>
 </ul>
+
+<div class="page" id="q1q2">
+<a href="/viewCommodity?page=${allCommoditys.number}&size=${allCommoditys.size}"> << previous |</a>
+<a href="/viewCommodity?page=${allCommoditys.number+ 2}&size=${allCommoditys.size}">next >> </a>
+</div>
+
+
+<%--<a href="/ingredient?page=${ingredients.number}&size=${ingredients.size}">previous</a>--%>
+<%--<a href="/ingredient?page=${ingredients.number+ 2}&size=${ingredients.size}">next</a>--%>
 
     <%--<q:forEach var="cm" items="${allCommoditys}">--%>
 

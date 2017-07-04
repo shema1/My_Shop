@@ -2,6 +2,8 @@ package com.shop.controller;
 
 import com.shop.editors.CategoryEditor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.WebDataBinder;
@@ -94,23 +96,13 @@ public class CommodityController {
 
 
 	@GetMapping("/viewCommodity")
-	public String allCommodity(Model model){
-		model.addAttribute("allCommoditys", commodityService.findAll());
+	public String allCommodity(Model model, @PageableDefault Pageable pageable){
+		model.addAttribute("allCommoditys", commodityService.findAllPages(pageable));
 
 		return "views-base-viewCommodity";
 	}
 
-//	@PostMapping("/updateCountry/{countryId}")
-//	public String updateCountry(@PathVariable int countryId,
-//								@RequestParam String name,
-//								@RequestParam MultipartFile image){
-//
-//		Country country = new Country(name);
-//		country.setId(countryId);
-//
-//		countryService.update(country, image);
-//
-//		return "redirect:/country";
+
 //
 //	}
 }
