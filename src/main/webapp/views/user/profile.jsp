@@ -15,10 +15,13 @@
 
     <%--</c:forEach>--%>
 <%--</ul>--%>
-
 <ul>
-    cnh
-    <c:forEach var="qaz" items="${qwer.ordersses}">
-        <li> ${qaz.date}</li>
+    <c:forEach var="history" items="${selUser.ordersses}">
+
+        ${history.date}
+        <c:forEach var="a" items="${history.commoditys}">
+            ${a.name}
+        </c:forEach>
+
     </c:forEach>
 </ul>

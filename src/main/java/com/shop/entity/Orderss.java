@@ -2,7 +2,9 @@ package com.shop.entity;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,7 +25,7 @@ public class Orderss {
 	
 	@ManyToMany
 	@JoinTable(name = "orders_commodity", joinColumns = @JoinColumn(name = "orders_id"), inverseJoinColumns = @JoinColumn(name = "commodity_id"))
-	private List<Commodity> commoditys = new ArrayList<Commodity>();
+	private Set<Commodity> commoditys = new HashSet<Commodity>();
 	
 	
 	@ManyToOne
@@ -108,33 +110,13 @@ public class Orderss {
 	}
 
 
-
-
-
-
-
-
-	public List<Commodity> getCommoditys() {
+	public Set<Commodity> getCommoditys() {
 		return commoditys;
 	}
 
-
-
-
-
-
-
-
-	public void setCommoditys(List<Commodity> commoditys) {
+	public void setCommoditys(Set<Commodity> commoditys) {
 		this.commoditys = commoditys;
 	}
-
-
-
-
-
-
-
 
 	public User getUser() {
 		return user;
