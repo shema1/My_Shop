@@ -13,6 +13,7 @@ public interface UserDao extends  JpaRepository<User, Integer> {
 
 
     User findByName(String name);
+    User findByEmail(String email);
 
    @Query("select u from User u left join fetch u.commodities where u.id=:id")
     User findUserWithCommodity(@Param("id")int id);

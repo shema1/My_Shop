@@ -6,6 +6,7 @@ package com.shop.validator.UserValidator;
 public class UserException extends Exception{
 
     public UserException(String message) {
+
         super(message);
     }
 

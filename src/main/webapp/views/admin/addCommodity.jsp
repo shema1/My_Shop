@@ -28,7 +28,7 @@
 	<div>
 		<form:input path="name"/>
 		<form:input path="price"/>
-		<form:textarea path="info"/>
+		<form:textarea path="info" />
 		<select name="ct">
 			<c:forEach var="ct" items="${allCategory}">
 				<option value="${ct.id}">${ct.type}</option>

@@ -115,6 +115,8 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 		return userDao.findUserWithHistory(id);
 	}
 
+
+
 	@Override
 	public User findByName(String name) {
 		return userDao.findByName(name);
@@ -122,12 +124,8 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 	}
 
 
-
-
-
-
-
-
-
-
+	@Override
+	public User findByEmail(String email) {
+		return userDao.findByEmail(email);
+	}
 }

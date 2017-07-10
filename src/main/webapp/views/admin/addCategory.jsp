@@ -13,7 +13,7 @@
 
 
     <sf:form modelAttribute="Categoris" action="/addCategory" method="post">
-        <sf:input path="type"/>
+        <sf:input path="type"/ >
         <button>add</button>
     </sf:form>
 <%--<form action="/addCategory" method="post">--%>

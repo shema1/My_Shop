@@ -20,4 +20,5 @@ public interface UserService {
 	User findUserWithCommodity(int id);
 	User findUserWithHistory(int id);
 	User findByName(String name);
+	User findByEmail(String email);
 }

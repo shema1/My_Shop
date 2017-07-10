@@ -40,12 +40,18 @@ private UserService userService;
 		try {
 			userService.save(user);
 		} catch (Exception e) {
-			if(e.getMessage().equals(UserValidatorMessenges.EMPTY_USERNAME_FIELD)||
+			if
+					(e.getMessage().equals(UserValidatorMessenges.EMPTY_USERNAME_FIELD)||
 					e.getMessage().equals(UserValidatorMessenges.USERNAME_ALREDY_EXIST)){
 				model.addAttribute("usernameException", e.getMessage());
 			}
+			if
+					(e.getMessage().equals(UserValidatorMessenges.EMPTY_EMAIL_FIELD)||
+					e.getMessage().equals(UserValidatorMessenges.EMAIL_ALREDY_EXIST))
+					model.addAttribute("emailException", e.getMessage());
 		return  "views-user-signUp";
 		}
+
 
 		String theme = "thank's for registration";
 		String mailBody =
