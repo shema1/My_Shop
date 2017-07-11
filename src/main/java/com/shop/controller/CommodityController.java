@@ -1,6 +1,7 @@
 package com.shop.controller;
 
 import com.shop.editors.CategoryEditor;
+import com.shop.validator.CommodityValidator.CommodityValidatorMessenges;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -44,16 +45,24 @@ public class CommodityController {
 	@PostMapping("/addCommodity")
 	public String registrationCommodity(@ModelAttribute Commodity commodity,
 										@RequestParam ArrayList<Integer> ct,
-										@RequestParam MultipartFile image){
+										@RequestParam MultipartFile image,
+										Model model){
 
 //		Category category = categoryService.findOne(ct);
 		
 		//asdfas
 
-		commodityService.save(commodity,ct,image);
+		try {
+			commodityService.save(commodity,ct,image);
+		} catch (Exception e) {
+			if(e.getMessage().equals(CommodityValidatorMessenges.EMPTY_FIELD)){
+				model.addAttribute("com",e.getMessage());
+
+			}
+			return "views-admin-addCommodity";
+		}
 
 
-		
 		return "redirect:/addCommodity";
 		
 		
@@ -88,7 +97,11 @@ public class CommodityController {
 		commodity.setPrice(price);
 		commodity.setInfo(info);
 
-		commodityService.save(commodity,ct,pathImage);
+		try {
+			commodityService.save(commodity,ct,pathImage);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		return  "redirect:/addCommodity";
 

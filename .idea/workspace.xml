@@ -2,41 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abcff806-5474-412d-a36e-d1f837714d58" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityValidatorMessenges.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.8.0.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/controller/CategoryController.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/CategoryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/controller/CommodityController.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/CommodityController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/serviceImpl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/serviceImpl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/service/CategoryService.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/service/CategoryService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/service/CommodityService.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/service/CommodityService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/serviceImpl/CategoryServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/serviceImpl/CategoryServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shop/serviceImpl/CommodityServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/shop/serviceImpl/CommodityServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/controller/CategoryController.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/controller/CategoryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/controller/CommodityController.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/controller/CommodityController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/controller/UserController.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/service/UserService.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/serviceImpl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/serviceImpl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/watch_shop_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/watch_shop_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/service/CategoryService.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/service/CategoryService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/service/CommodityService.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/service/CommodityService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/serviceImpl/CategoryServiceImpl.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/serviceImpl/CategoryServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/serviceImpl/CommodityServiceImpl.class" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/WEB-INF/classes/com/shop/serviceImpl/CommodityServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/controller/CategoryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/controller/CategoryController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/controller/CommodityController.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/controller/CommodityController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserException.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserValidator.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserValidatorMessenges.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserValidatorMessenges.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/label_ua.properties" afterPath="$PROJECT_DIR$/src/main/resources/label_ua.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/signUp.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/signUp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/service/CategoryService.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/CategoryService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/service/CommodityService.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/CommodityService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CategoryServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CategoryServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CommodityServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CommodityServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityValidator.java" afterPath="$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityValidator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/addCategory.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/addCategory.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/addCommodity.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/addCommodity.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/updateCommodity.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/updateCommodity.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/user/signUp.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/signUp.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/js/signUp.js" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/js/signUp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/views/admin/addCategory.jsp" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/views/admin/addCategory.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/views/admin/addCommodity.jsp" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/views/admin/addCommodity.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/views/user/signUp.jsp" afterPath="$PROJECT_DIR$/target/watch_shop-0.0.1-SNAPSHOT/views/user/signUp.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watch_shop.iml" afterPath="$PROJECT_DIR$/watch_shop.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,61 +42,59 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="49" column="86" lean-forward="false" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#3055#3056#0" expanded="false" />
+                <element signature="e#3089#3090#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommodityValidator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommodityServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CommodityServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommodityController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/controller/CommodityController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="addCommodity.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/addCommodity.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addCategory.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/addCategory.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommodityValidator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateCommodity.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/updateCommodity.jsp">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signUp.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/user/signUp.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -134,6 +124,7 @@
       <find>li</find>
       <find>focused</find>
       <find>susername</find>
+      <find>Commoditis</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,14 +143,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/shop/service/CategoryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/service/OrderssService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/OrderssServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/singUp.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/testreg.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/testreg.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/test/testreg.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shop/controller/CategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/dao/CategoryDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/tiles/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/controller/OrderController.java" />
@@ -173,7 +162,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/index.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/base/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/service/CommodityService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shop/controller/CommodityController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/viewCommodity.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/base/viewCommodity.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/user/profile.jsp" />
@@ -190,18 +178,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserValidatorMessenges.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shop/controller/UserController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/signUp.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/user/signUp.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityValidatorMessenges.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CommodityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/addCommodity.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/admin/updateCommodity.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shop/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/admin/addCategory.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shop/controller/CommodityController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shop/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CommodityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/addCommodity.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityValidator.java" />
       </list>
     </option>
@@ -275,7 +266,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -666,40 +656,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UserValidator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="watch_shop4()" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="watch_shop4()" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="validator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="CommodityValidator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -882,8 +838,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -893,7 +850,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/label_ua.properties" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -1488,7 +1445,10 @@
       <workItem from="1499414440535" duration="2882000" />
       <workItem from="1499529582914" duration="5527000" />
       <workItem from="1499592937662" duration="3970000" />
-      <workItem from="1499681360819" duration="369000" />
+      <workItem from="1499681360819" duration="1033000" />
+      <workItem from="1499782344238" duration="5928000" />
+      <workItem from="1499793339301" duration="1210000" />
+      <workItem from="1499796332287" duration="128000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1495969148499</created>
@@ -1609,11 +1569,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499417290169</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="pagination">
+      <created>1499681798835</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1499681798835</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230152000" />
+    <option name="totallyTimeSpent" value="238082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
@@ -1634,16 +1601,17 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.4894822" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.490625" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32915717" sideWeight="0.490625" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830626" sideWeight="0.47931033" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20631067" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21601942" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1651,7 +1619,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1737,14 +1704,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CommodityServiceImpl.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
@@ -1754,13 +1713,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/entity/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/dao/CategoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1775,13 +1727,6 @@
           <folding>
             <marker date="1499069387948" expanded="false" signature="89:130" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1838,7 +1783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1853,10 +1797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="e#1369#1370#0" expanded="false" />
-            <element signature="e#1387#1388#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1879,7 +1819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1901,16 +1840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/controller/CommodityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="97" column="31" lean-forward="false" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/viewCommodity.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="674">
@@ -1922,7 +1851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
           <caret line="25" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1950,7 +1878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2011,9 +1938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2039,17 +1963,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="128" column="40" lean-forward="false" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/validator/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/updateCommodity.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/user/signUp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="62" column="76" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserValidatorMessenges.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityValidatorMessenges.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -2062,99 +2022,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding>
-            <element signature="e#221#222#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserValidatorMessenges.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/addCategory.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityValidatorMessenges.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="128" column="40" lean-forward="false" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/validator/UserValidator/UserValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CommodityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="646">
+          <caret line="49" column="86" lean-forward="false" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
           <folding>
-            <element signature="e#2071#2072#0" expanded="true" />
-            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3055#3056#0" expanded="false" />
+            <element signature="e#3089#3090#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/addCommodity.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/user/signUp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/updateCommodity.jsp">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/addCategory.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/controller/CommodityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="697">
+          <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/validator/CommodityValidator/CommodityValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="357">
+          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shop/serviceImpl/CommodityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
           <folding />
         </state>
       </provider>

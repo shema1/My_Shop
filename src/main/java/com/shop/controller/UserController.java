@@ -47,8 +47,11 @@ private UserService userService;
 			}
 			if
 					(e.getMessage().equals(UserValidatorMessenges.EMPTY_EMAIL_FIELD)||
-					e.getMessage().equals(UserValidatorMessenges.EMAIL_ALREDY_EXIST))
-					model.addAttribute("emailException", e.getMessage());
+					e.getMessage().equals(UserValidatorMessenges.EMAIL_ALREDY_EXIST)){
+				model.addAttribute("emailException", e.getMessage());
+
+			}
+
 		return  "views-user-signUp";
 		}
 

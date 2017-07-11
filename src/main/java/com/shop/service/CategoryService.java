@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface CategoryService {
 	
-	void save(Category category);
+	void save(Category category) throws Exception;
 	List<Category> findAll();
 	Category findOne(int id);
 	void delete(int id); 

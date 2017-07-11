@@ -31,7 +31,7 @@ public class CategoryController {
 	
 		
 		@PostMapping("/addCategory")
-		public String registrationCategory(@ModelAttribute Category category){
+		public String registrationCategory(@ModelAttribute Category category) throws Exception {
 			categoryService.save(category);
 			return"redirect:/addCategory";
 		}

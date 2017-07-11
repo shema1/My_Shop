@@ -7,13 +7,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
-    <link rel="stylesheet" href="/css/addCategory.css">
+    <%--<link rel="stylesheet" href="/css/addCategory.css">--%>
 </head>
 <body class="color">
 
 
     <sf:form modelAttribute="Categoris" action="/addCategory" method="post">
-        <sf:input path="type"/ >
+        <span style="color: #DC3B3B">${com2}</span>
+        <sf:input path="type"/>
         <button>add</button>
     </sf:form>
 <%--<form action="/addCategory" method="post">--%>

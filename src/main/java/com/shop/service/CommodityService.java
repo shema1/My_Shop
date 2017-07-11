@@ -9,7 +9,7 @@ import com.shop.entity.Commodity;
 import org.springframework.web.multipart.MultipartFile;
 
 public interface CommodityService {
-	void save(Commodity commodity, ArrayList<Integer> id, MultipartFile image);
+	void save(Commodity commodity, ArrayList<Integer> id, MultipartFile image) throws Exception;
 	List<Commodity> findAll();
 	Commodity findOne(int id);
 	void delete(int id); 

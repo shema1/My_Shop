@@ -5,7 +5,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.shop.validator.Validator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -24,10 +26,16 @@ public class CommodityServiceImpl implements CommodityService{
 	private CommodityDao commodityDao;
 	@Autowired
 	private CategoryDao categoryDao;
-	
-	public void save(Commodity commodity, ArrayList<Integer> ids, MultipartFile image) {
+
+	@Autowired
+	@Qualifier("commodityValidator")
+	private  Validator validator;
+
+	public void save(Commodity commodity, ArrayList<Integer> ids, MultipartFile image) throws Exception {
 		// TODO Auto-generated method stub
 //	Category category = categoryDao.findOne(id);
+validator.validete(commodity);
+
 //	
 		commodityDao.saveAndFlush(commodity);
 

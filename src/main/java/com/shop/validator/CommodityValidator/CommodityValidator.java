@@ -1,13 +1,16 @@
 package com.shop.validator.CommodityValidator;
 
+import com.shop.entity.Category;
 import com.shop.entity.Commodity;
 import com.shop.service.CommodityService;
 import com.shop.validator.Validator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by Mykola on 09.07.2017.
  */
+@Component
 public class CommodityValidator implements Validator {
 
     @Autowired
@@ -18,9 +21,11 @@ public class CommodityValidator implements Validator {
 
         Commodity commodity= (Commodity) o;
 
+
         if(commodity.getName().isEmpty()){
             throw new CommodityException(CommodityValidatorMessenges.EMPTY_FIELD);
         }
+
 
     }
 }

@@ -2,7 +2,9 @@ package com.shop.serviceImpl;
 
 import java.util.List;
 
+import com.shop.validator.Validator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.shop.dao.CategoryDao;
@@ -13,10 +15,12 @@ import com.shop.service.CategoryService;
 public class CategoryServiceImpl implements CategoryService {
 	@Autowired
 	private CategoryDao categoryDao;
+
+
 	
-	
-	public void save(Category category) {
+	public void save(Category category) throws Exception {
 		// TODO Auto-generated method stub
+
 		categoryDao.save(category);
 		
 		
