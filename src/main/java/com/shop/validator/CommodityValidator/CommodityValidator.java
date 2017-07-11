@@ -23,7 +23,10 @@ public class CommodityValidator implements Validator {
 
 
         if(commodity.getName().isEmpty()){
-            throw new CommodityException(CommodityValidatorMessenges.EMPTY_FIELD);
+            throw new CommodityException(CommodityValidatorMessenges.EMPTY_NAME_FIELD);
+
+        }else if(String.valueOf(commodity.getPrice()).equals(null)){
+            throw new  CommodityException(CommodityValidatorMessenges.EMPTY_PRICE_FIELD);
         }
 
 

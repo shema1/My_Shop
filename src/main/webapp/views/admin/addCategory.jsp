@@ -13,8 +13,9 @@
 
 
     <sf:form modelAttribute="Categoris" action="/addCategory" method="post">
-        <span style="color: #DC3B3B">${com2}</span>
+       <div> <span style="color: #DC3B3B">${kolya}</span>
         <sf:input path="type"/>
+       </div>
         <button>add</button>
     </sf:form>
 <%--<form action="/addCategory" method="post">--%>

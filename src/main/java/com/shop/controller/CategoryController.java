@@ -1,5 +1,6 @@
 package com.shop.controller;
 
+import com.shop.validator.CategoryValidation.CategoryValidatorMessenger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -31,8 +32,18 @@ public class CategoryController {
 	
 		
 		@PostMapping("/addCategory")
-		public String registrationCategory(@ModelAttribute Category category) throws Exception {
-			categoryService.save(category);
+		public String registrationCategory(@ModelAttribute Category category,
+										   Model model) throws Exception {
+
+				try {
+					categoryService.save(category);
+				}catch (Exception e){
+					if(e.getMessage().equals(CategoryValidatorMessenger.FIELD_CATEGORY_IS_EMPTY)){
+						model.addAttribute("kolya", e.getMessage());
+					}
+					return "views-admin-addCategory";
+				}
+
 			return"redirect:/addCategory";
 		}
 		

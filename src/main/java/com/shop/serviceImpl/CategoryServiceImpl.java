@@ -16,10 +16,13 @@ public class CategoryServiceImpl implements CategoryService {
 	@Autowired
 	private CategoryDao categoryDao;
 
-
+	@Autowired
+	@Qualifier("categoryValidation")
+private Validator validator;
 	
 	public void save(Category category) throws Exception {
 		// TODO Auto-generated method stub
+		validator.validete(category);
 
 		categoryDao.save(category);
 		

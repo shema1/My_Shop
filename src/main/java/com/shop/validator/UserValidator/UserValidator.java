@@ -21,6 +21,8 @@ public class UserValidator implements Validator {
 
         if(user.getName().isEmpty()){
             throw new UserException(UserValidatorMessenges.EMPTY_USERNAME_FIELD);
+
+
         }if (userService.findByName(user.getName()) !=null){
             throw  new UserException(UserValidatorMessenges.USERNAME_ALREDY_EXIST);
         } if(user.getEmail().isEmpty()){

@@ -34,7 +34,7 @@ public class CommodityServiceImpl implements CommodityService{
 	public void save(Commodity commodity, ArrayList<Integer> ids, MultipartFile image) throws Exception {
 		// TODO Auto-generated method stub
 //	Category category = categoryDao.findOne(id);
-validator.validete(commodity);
+     validator.validete(commodity);
 
 //	
 		commodityDao.saveAndFlush(commodity);
