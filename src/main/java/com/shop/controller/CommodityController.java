@@ -57,13 +57,12 @@ public class CommodityController {
 		} catch (Exception e) {
 			if(e.getMessage().equals(CommodityValidatorMessenges.EMPTY_NAME_FIELD)){
 //				model.addAttribute("com",e.getMessage());
-
-				return"views-admin-test";
+				return"views-validation-commodityName";
 			}
-			if (e.getMessage().equals(CommodityValidatorMessenges.EMPTY_PRICE_FIELD)) {
+			 if (e.getMessage().equals(CommodityValidatorMessenges.EMPTY_PRICE_FIELD)) {
 
 //				model.addAttribute("test",e.getMessage());
-				return"views-admin-test";
+				return"views-validation-commodityPrice";
 			}
 
 		}

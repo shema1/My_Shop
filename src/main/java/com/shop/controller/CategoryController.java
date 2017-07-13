@@ -39,9 +39,9 @@ public class CategoryController {
 					categoryService.save(category);
 				}catch (Exception e){
 					if(e.getMessage().equals(CategoryValidatorMessenger.FIELD_CATEGORY_IS_EMPTY)){
-						model.addAttribute("kolya", e.getMessage());
+//						model.addAttribute("kolya", e.getMessage());
 					}
-					return "views-admin-addCategory";
+					return "views-validation-categoryException";
 				}
 
 			return"redirect:/addCategory";
