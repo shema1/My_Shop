@@ -7,23 +7,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
     <link rel="stylesheet" href="/css/index.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
 </head>
-<body class="bbb">
-
-
-<div>
-
-
+<h1>BEST CHANGE</h1>
+<div id="slider">
+    <a href="#" class="control_next">></a>
+    <a href="#" class="control_prev"><</a>
     <ul>
-        <c:forEach var="history" items="${selUser.ordersses}">
-            ${history.date}
-
+        <c:forEach var="cm" items="${allCommoditys.content}">
+            <li>  <img class="photo" src="${cm.pathImage}" alt="cm.pathImage"> </li>
         </c:forEach>
-    </ul>
-
-
-
-	
+         </ul>
 </div>
-</body>
+
+<div class="slider_option">
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">Autoplay Slider</label>
+</div>
+
+
+
+
 </html>

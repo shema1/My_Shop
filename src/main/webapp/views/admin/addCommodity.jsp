@@ -24,50 +24,124 @@
 
 
 
-<form:form modelAttribute="Commoditis" action="/addCommodity?${_csrf.parameterName}=${_csrf.token}" method="post"  enctype="multipart/form-data">
-	<div>
-		<%--${com}--%>
-		<form:input path="name"/>
-			<%--<span style="color: #DC3B3B">${test}</span>--%>
-		<form:input path="price"/>
-		<form:textarea path="info" />
-		<select name="ct">
+<form:form modelAttribute="Commoditis" action="/addCommodity?${_csrf.parameterName}=${_csrf.token}" method="post"  enctype="multipart/form-data" role="form" class="form-inline">
+
+	<div class="form-group">
+			<%--<span style="color: #DC3B3B">${commodityNameException}</span>--%>
+		<label for="name">Name</label>
+		<input path="name" class="form-control" name="name"/>
+	</div>
+
+	<div class="form-group">
+	<%--<span style="color: #DC3B3B">${commodityPriceException}</span>--%>
+	<label for="price">Price</label>
+		<input path="price" name="price" class="form-control"/>
+	</div>
+
+		<%--<form:textarea path="info" />--%>
+		<select name="ct" class="form-control">
 			<c:forEach var="ct" items="${allCategory}">
 				<option value="${ct.id}">${ct.type}</option>
 			</c:forEach>
 		</select>
-	</div>
-	<div>
-		<input name="image"  type="file" />
+	<button  class=" btn-sm btn-success">ADD</button>
 
-		</select>
-	</div>
+
+		<strong class="alert alert-warning" role="alert">${commodityNameException} ${commodityPriceException} </strong>
+
+
+
+		<input name="image"  type="file" class="btn btn-sm btn-success fixInput" />
+
+
+
 
 	<%--<sf:select path="category" items="${allCategory}" itemLabel="type" itemValue="id" />--%>
-	<button>add</button>
+	<%--<button>add</button>--%>
 
 </form:form>
 
 
+<%--<table class="table ">--%>
+	<%--<thead>--%>
+	<%--<tr>--%>
+		<%--<th>Photo</th>--%>
+		<%--<th>Name</th>--%>
+		<%--<th>Option</th>--%>
+
+	<%--</tr>--%>
+	<%--</thead>--%>
+<%--<ul>--%>
+
+	<%--<x:forEach var="cm" items="${allCommodity}">--%>
+		<%--&lt;%&ndash;<td>${cm.pathImage}</td>&ndash;%&gt;--%>
+		<%--<tbody>--%>
+		<%--<li class="row asdf">--%>
+			<%--<div class="col-xs-4 col-sm-4 col-md-4">--%>
+				<%--<td>	<img class="photo" src="${cm.pathImage}" alt="cm.pathImage"></td>--%>
+			<%--</div>--%>
+
+
+			<%--<div class="col-xs-4 col-sm-4 col-md-4">--%>
+				<%--<td>		${cm.name}, ${cm.price}</td>--%>
+			<%--</div>--%>
+
+
+			<%--<div class="col-xs-4 col-sm-4 col-md-4">--%>
+				<%--<td><a href="/deleteCommodity/${cm.id}">  Delete</a>--%>
+				<%--<a href="/updateCommodity/${cm.id}">update</a> </td>--%>
+			<%--</div>--%>
+
+		<%--</li>--%>
+		<%--<tbody>--%>
+		<%--</x:forEach>--%>
+
+<%--</ul>--%>
+
+<%--</table>--%>
 
 <ul>
-	<x:forEach var="cm" items="${allCommodity}">
-		<%--<td>${cm.pathImage}</td>--%>
-		<li class="row asdf">
-			<div class="col-xs-4 col-sm-4 col-md-4">
-				<img class="photo" src="${cm.pathImage}" alt="cm.pathImage">
-			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4">
-					${cm.name}, ${cm.price}
-			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4">
-				<a href="/deleteCommodity/${cm.id}">  Delete</a>
-				<a href="/updateCommodity/${cm.id}">update</a>
-			</div>
-		</li>
-	</x:forEach>
+<div>
+	<li class="row win"><div class="col-xs-4 col-sm-4 col-md-4">Photo</div>
+	<div class="col-xs-3 col-sm-3 col-md-3">Name</div>
+	<div class="col-xs-3 col-sm-3 col-md-3">Price</div>
+	<div class="col-xs-2 col-sm-2 col-md-2">Option</div></li>
+
+
+
+
+	</div>
 </ul>
 
+	<ul>
+
+		<x:forEach var="cm" items="${allCommodity}">
+			<%--<td>${cm.pathImage}</td>--%>
+
+		<li class="row win">
+			<div class="col-xs-4 col-sm-4 col-md-4">
+					<img class="photo" src="${cm.pathImage}" alt="cm.pathImage">
+			</div>
+
+
+			<div class="col-xs-4 col-sm-4 col-md-3">
+						${cm.name}
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-3">
+					${cm.price}
+			</div>
+
+
+			<div class="col-xs-4 col-sm-4 col-md-2">
+				<a href="/deleteCommodity/${cm.id}">  Delete</a>
+					<a href="/updateCommodity/${cm.id}">update</a>
+			</div>
+
+		</li>
+
+		</x:forEach>
+
+	</ul>
 
 
 

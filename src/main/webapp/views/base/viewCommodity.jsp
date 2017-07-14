@@ -26,15 +26,30 @@
 <body class="color ">
 
 <ul>
+    <div>
+        <li class="row win"><div class="col-xs-4 col-sm-4 col-md-4">Photo</div>
+            <div class="col-xs-3 col-sm-3 col-md-3">Name</div>
+            <div class="col-xs-3 col-sm-3 col-md-3">Price</div>
+            <div class="col-xs-2 col-sm-2 col-md-2">Option</div></li>
+
+
+    </div>
+</ul>
+
+<ul>
     <q:forEach var="cm" items="${allCommoditys.content}">
         <li class="row asd">
             <div class="col-xs-4 col-sm-4 col-md-4">
                 <img class="photo" src="${cm.pathImage}" alt="cm.pathImage">
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4">
-                    ${cm.name}, ${cm.price}
+            <div class="col-xs-4 col-sm-4 col-md-3">
+                    ${cm.name}
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4">
+
+            <div class="col-xs-4 col-sm-4 col-md-3">
+                     ${cm.price}
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-2">
                 <sec:authorize access="hasAnyRole('ROLE_USER, ROLE_ADMIN')">
                 <a href="/inBasket/${cm.id}">| in basket |</a>
                 </sec:authorize>

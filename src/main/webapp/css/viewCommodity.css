@@ -22,9 +22,9 @@
 
 .photo{
 
-    width: 100%;
-    height: 45%;
-    margin: 2%;
+    width: 65%;
+    height: 30%;
+margin: 2%;
 
 }
 .asd{
@@ -40,5 +40,11 @@
 }
 
 #q1q2{
+    color: white;
+}
+.win {
+    margin: 2%;
+    border: solid #29314e;
+    background: darkslategrey;
     color: white;
 }

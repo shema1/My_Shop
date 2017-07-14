@@ -3,3 +3,8 @@
     color: white;
     font-weight: 700;
 }
+
+input.form-control{
+
+    width: 30%;
+}

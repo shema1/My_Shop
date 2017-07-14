@@ -45,7 +45,7 @@
 	</nav>
 	<ul class="cd-tabs-content">
 		<li data-content="login" class="selected">
-			<form:form action="/login" method="post" name="login-form" onsubmit="alert('asfsdf')"  >
+			<form:form action="/login" method="post" name="login-form"   >
 				<div class="form-fild">
 					<input type="text" placeholder="username" name="username" >
 				</div>
@@ -54,7 +54,7 @@
 					<input type="password" placeholder="password" name="password">
 				</div>
 				<span class="error"></span>
-				<button type="submit" onclick="validate(this.form)" >Submit</button>
+				<button>Submit</button>
 			</form:form>
 		</li>
 		<li data-content="signup">

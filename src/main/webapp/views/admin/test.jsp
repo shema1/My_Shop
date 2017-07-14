@@ -8,5 +8,3 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
-FIELD EMPTY
-<a href="/">NAZAD</a>

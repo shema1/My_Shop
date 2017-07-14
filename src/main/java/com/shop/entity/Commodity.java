@@ -21,7 +21,7 @@ public class Commodity {
 	private int id;
 	
 	private String name;
-	private int price;
+	private String price;
 	private String info;
 	private String pathImage;
 
@@ -82,14 +82,13 @@ public class Commodity {
 		this.name = name;
 	}
 
-	public int getPrice() {
+	public String getPrice() {
 		return price;
 	}
 
-	public void setPrice(int price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
-
 
 	@Override
 	public String toString() {

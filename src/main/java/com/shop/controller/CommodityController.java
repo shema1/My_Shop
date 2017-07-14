@@ -56,15 +56,18 @@ public class CommodityController {
 			commodityService.save(commodity,ct,image);
 		} catch (Exception e) {
 			if(e.getMessage().equals(CommodityValidatorMessenges.EMPTY_NAME_FIELD)){
-//				model.addAttribute("com",e.getMessage());
-				return"views-validation-commodityName";
-			}
-			 if (e.getMessage().equals(CommodityValidatorMessenges.EMPTY_PRICE_FIELD)) {
+				model.addAttribute("commodityNameException",e.getMessage());
 
-//				model.addAttribute("test",e.getMessage());
-				return"views-validation-commodityPrice";
 			}
+			  else  if (e.getMessage().equals(CommodityValidatorMessenges.EMPTY_PRICE_FIELD)) {
 
+				model.addAttribute("commodityPriceException",e.getMessage());
+
+			}
+			model.addAttribute("allCategory", categoryService.findAll());
+			model.addAttribute("allCommodity", commodityService.findAll());
+			model.addAttribute("Commoditis", new Commodity());
+			return"views-admin-addCommodity";
 		}
 
 
@@ -92,7 +95,7 @@ public class CommodityController {
 	@PostMapping("/updateCommodity/{commodityId}")
 	public String updateCommodity(@PathVariable int commodityId,
 								  @RequestParam String name,
-								  @RequestParam int price,
+								  @RequestParam String price,
 								  @RequestParam String info,
 								  @RequestParam ArrayList<Integer> ct,
 								  @RequestParam MultipartFile pathImage) {

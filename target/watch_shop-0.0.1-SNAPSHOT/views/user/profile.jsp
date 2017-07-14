@@ -15,9 +15,21 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="/css/viewCommodity.css">
+<link rel="stylesheet" href="/css/profile.css">
+
+<ul>
+    <div>
+        <li class="row win">
+            <div class="col-xs-4 col-sm-4 col-md-4">Photo</div>
+            <div class="col-xs-3 col-sm-3 col-md-3">Name</div>
+            <div class="col-xs-3 col-sm-3 col-md-3">Price</div>
+            <div class="col-xs-2 col-sm-2 col-md-2">Option</div></li>
 
 
+    </div>
+</ul>
+
+<body class="color">
 <ul>
     <c:forEach var="history" items="${selUser.ordersses}">
 
@@ -28,14 +40,17 @@
                     <img class="photo" src="${a.pathImage}" alt="cm.pathImage">
                 </div>
 
-                <div class="col-xs-4 col-sm-4 col-md-4">
+                <div class="col-xs-4 col-sm-3 col-md-3">
                         ${a.name}
+                </div>
+                <div class="col-xs-4 col-sm-3 col-md-3">
+                        ${a.price}
                 </div>
 
 
             </c:forEach>
 
-            <div class="col-xs-4 col-sm-4 col-md-4">
+            <div class="col-xs-4 col-sm-2 col-md-2">
         ${history.date}
             </div>
 
@@ -44,3 +59,4 @@
         </li>
     </c:forEach>
 </ul>
+</body>

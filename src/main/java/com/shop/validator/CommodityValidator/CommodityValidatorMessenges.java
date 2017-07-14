@@ -5,7 +5,7 @@ package com.shop.validator.CommodityValidator;
  */
 public interface CommodityValidatorMessenges {
 
-    String EMPTY_NAME_FIELD  = "empty field";
-    String EMPTY_PRICE_FIELD  = "empty field";
-    String ONLY_NUMBERS = "only numbers";
+    String EMPTY_NAME_FIELD  = "empty name field";
+    String EMPTY_PRICE_FIELD  = "empty price field";
+//    String ONLY_NUMBERS = "only numbers";
 }
