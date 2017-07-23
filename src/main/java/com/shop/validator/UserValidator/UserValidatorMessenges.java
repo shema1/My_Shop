@@ -9,4 +9,5 @@ public interface UserValidatorMessenges {
     String USERNAME_ALREDY_EXIST = "username already exist";
     String EMPTY_EMAIL_FIELD  = "empty email field";
     String EMAIL_ALREDY_EXIST = "email already exist";
+    String BASKET_EMPTY ="basket empty";
 }

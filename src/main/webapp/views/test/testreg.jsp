@@ -11,14 +11,29 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<div  class="form-inline">
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="??????? email">
-    </div>
-    <div class="form-group">
-        <label for="pass">??????</label>
-        <input type="password" class="form-control" id="pass" placeholder="??????">
-    </div>
-    <button type="submit" class="btn btn-success">?????</button>
-</div>
+
+<script>
+    function Init () {
+        var myTextbox = document.getElementById('my-textbox');
+        myTextbox.addEventListener( 'keypress', checkName, false );
+    }
+
+    function checkName(evt) {
+        var charCode = evt.charCode;
+        if (charCode != 0) {
+            if (charCode < 97 || charCode > 122) {
+                evt.preventDefault();
+                alert(
+                    "??????????, ??????????? ?????? ????? ??????? ???????? ?? ????????"
+                    + "\n" + "charCode: " + charCode + "\n"
+                );
+            }
+        }
+    }
+</script>
+</head>
+<body onload="Init ()">
+<p>??????????, ??????? ???? ???, ????????? ?????? ????? ??????? ???????? ?? ????????.</p>
+<form>
+    <input type="text" id="my-textbox" />
+</form>

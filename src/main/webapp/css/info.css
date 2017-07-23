@@ -1,0 +1,24 @@
+.bk{
+    background-image: url("http://world-of-mods.ucoz.org/frontsite.jpg");
+}
+.cen{
+    color: white;
+    text-align: center;
+    /*margin-top: 50%;*/
+    /*margin-left: 47%;*/
+    font-weight: 900;
+    font-size: 50px;
+    font-family: Sylfaen;
+}
+.backk{
+    color: white;
+    text-align: center;
+    /*margin-top: 50%;*/
+    /*margin-left: 47%;*/
+    font-weight: 900;
+    font-size: 20px;
+    font-family: Sylfaen;
+}
+.err{
+    background-image: url("http://world-of-mods.ucoz.org/frontsite.jpg");
+}

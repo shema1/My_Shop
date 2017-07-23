@@ -33,9 +33,10 @@
 <ul>
     <c:forEach var="history" items="${selUser.ordersses}">
 
-        <li class="row asd">
+
 
             <c:forEach var="a" items="${history.commoditys}">
+                <li class="row asd">
                 <div class="col-xs-4 col-sm-4 col-md-4">
                     <img class="photo" src="${a.pathImage}" alt="cm.pathImage">
                 </div>
@@ -47,12 +48,12 @@
                         ${a.price}
                 </div>
 
+                <div class="col-xs-4 col-sm-2 col-md-2">
+                        ${history.date}
+                </div>
 
             </c:forEach>
 
-            <div class="col-xs-4 col-sm-2 col-md-2">
-        ${history.date}
-            </div>
 
 
 

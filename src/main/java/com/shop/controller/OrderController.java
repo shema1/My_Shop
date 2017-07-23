@@ -3,6 +3,8 @@ package com.shop.controller;
 import java.security.Principal;
 import java.time.LocalDate;
 
+import com.shop.entity.User;
+import com.shop.validator.UserValidator.UserValidatorMessenges;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,7 +24,7 @@ public class OrderController {
 	@Autowired
 	private OrderssService orderssService;
 	@Autowired
-	private CommodityService commodityService; 
+	private CommodityService commodityService;
 	@Autowired
 	private UserService userService ;
 
@@ -33,6 +35,12 @@ public class OrderController {
 		model.addAttribute("selCommodity", commodityService.findAll() );
 		model.addAttribute("selUser", userService.findUserWithHistory(Integer.parseInt(principal.getName())));
 		model.addAttribute("user",userService.findUserWithCommodity(Integer.parseInt(principal.getName())));
+
+		User user = userService.findUserWithCommodity(Integer.parseInt(principal.getName()));
+		if (user.getCommodities().isEmpty()){
+			return "views-info-basketExist";
+		}
+
 		return "views-user-addOrder";
 	}
 
@@ -51,10 +59,13 @@ public String deleteFromBasket (@PathVariable int userid,
 		return "redirect:/";
 	}
 
+
 	@PostMapping("/buy/{userid}")
-	public String buy (@PathVariable int userid){
-	orderssService.buy(userid);
-	return "redirect:/addOrder";
+	public String buy (@PathVariable int userid, Model model){
+
+			orderssService.buy(userid);
+
+		return "views-info-thank";
 	}
 
 

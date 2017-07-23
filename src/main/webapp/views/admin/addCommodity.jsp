@@ -62,43 +62,6 @@
 </form:form>
 
 
-<%--<table class="table ">--%>
-	<%--<thead>--%>
-	<%--<tr>--%>
-		<%--<th>Photo</th>--%>
-		<%--<th>Name</th>--%>
-		<%--<th>Option</th>--%>
-
-	<%--</tr>--%>
-	<%--</thead>--%>
-<%--<ul>--%>
-
-	<%--<x:forEach var="cm" items="${allCommodity}">--%>
-		<%--&lt;%&ndash;<td>${cm.pathImage}</td>&ndash;%&gt;--%>
-		<%--<tbody>--%>
-		<%--<li class="row asdf">--%>
-			<%--<div class="col-xs-4 col-sm-4 col-md-4">--%>
-				<%--<td>	<img class="photo" src="${cm.pathImage}" alt="cm.pathImage"></td>--%>
-			<%--</div>--%>
-
-
-			<%--<div class="col-xs-4 col-sm-4 col-md-4">--%>
-				<%--<td>		${cm.name}, ${cm.price}</td>--%>
-			<%--</div>--%>
-
-
-			<%--<div class="col-xs-4 col-sm-4 col-md-4">--%>
-				<%--<td><a href="/deleteCommodity/${cm.id}">  Delete</a>--%>
-				<%--<a href="/updateCommodity/${cm.id}">update</a> </td>--%>
-			<%--</div>--%>
-
-		<%--</li>--%>
-		<%--<tbody>--%>
-		<%--</x:forEach>--%>
-
-<%--</ul>--%>
-
-<%--</table>--%>
 
 <ul>
 <div>

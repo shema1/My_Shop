@@ -25,4 +25,10 @@ public class IndexController {
 	public String indexAfterLogin(){
 		return "views-base-index";
 	}
+
+	@GetMapping("/error500")
+	public String error500(){
+
+		return "views-info-error500";
+	}
 }

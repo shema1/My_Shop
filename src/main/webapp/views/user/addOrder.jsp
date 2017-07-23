@@ -34,7 +34,10 @@
 </ul>
 
 <br>
+
+<span style="color: #DC3B3B">${buyException}</span>
 <ul>
+
 
 <c:forEach var="a" items="${user.commodities}">
 	<li class="row asd">
