@@ -17,6 +17,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="/css/addComodity.css">
+
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>Insert title here</title>
 </head>
@@ -29,13 +30,13 @@
 	<div class="form-group">
 			<%--<span style="color: #DC3B3B">${commodityNameException}</span>--%>
 		<label for="name">Name</label>
-		<input path="name" class="form-control" name="name"/>
+		<input path="name" class="form-control" name="name" placeholder="${commodityNameException}"/>
 	</div>
 
 	<div class="form-group">
 	<%--<span style="color: #DC3B3B">${commodityPriceException}</span>--%>
 	<label for="price">Price</label>
-		<input path="price" name="price" class="form-control"/>
+		<input type="text" path="price" name="price" pattern="^[ 0-9]+$" class="form-control" placeholder="${commodityPriceException}" />
 	</div>
 
 		<%--<form:textarea path="info" />--%>
@@ -47,11 +48,14 @@
 	<button  class=" btn-sm btn-success">ADD</button>
 
 
-		<strong class="alert alert-warning" role="alert">${commodityNameException} ${commodityPriceException} </strong>
+		<%--<strong class="alert alert-warning" role="alert">${commodityNameException} ${commodityPriceException} </strong>--%>
 
 
 
 		<input name="image"  type="file" class="btn btn-sm btn-success fixInput" />
+	<div style="color: #DC3B3B" >${commodityImageException}</div>
+
+	<div style="color: #DC3B3B"> ${commodityNameException2} ${commodityPriceException2} ${commodityImageException2}</div>
 
 
 
@@ -62,43 +66,6 @@
 </form:form>
 
 
-<%--<table class="table ">--%>
-	<%--<thead>--%>
-	<%--<tr>--%>
-		<%--<th>Photo</th>--%>
-		<%--<th>Name</th>--%>
-		<%--<th>Option</th>--%>
-
-	<%--</tr>--%>
-	<%--</thead>--%>
-<%--<ul>--%>
-
-	<%--<x:forEach var="cm" items="${allCommodity}">--%>
-		<%--&lt;%&ndash;<td>${cm.pathImage}</td>&ndash;%&gt;--%>
-		<%--<tbody>--%>
-		<%--<li class="row asdf">--%>
-			<%--<div class="col-xs-4 col-sm-4 col-md-4">--%>
-				<%--<td>	<img class="photo" src="${cm.pathImage}" alt="cm.pathImage"></td>--%>
-			<%--</div>--%>
-
-
-			<%--<div class="col-xs-4 col-sm-4 col-md-4">--%>
-				<%--<td>		${cm.name}, ${cm.price}</td>--%>
-			<%--</div>--%>
-
-
-			<%--<div class="col-xs-4 col-sm-4 col-md-4">--%>
-				<%--<td><a href="/deleteCommodity/${cm.id}">  Delete</a>--%>
-				<%--<a href="/updateCommodity/${cm.id}">update</a> </td>--%>
-			<%--</div>--%>
-
-		<%--</li>--%>
-		<%--<tbody>--%>
-		<%--</x:forEach>--%>
-
-<%--</ul>--%>
-
-<%--</table>--%>
 
 <ul>
 <div>
@@ -144,6 +111,9 @@
 	</ul>
 
 
+<%--<script  src="js/jquery-1.5.2.min.js"></script>--%>
+<%--<script  src="js/jquery.validate.min.js"></script>--%>
+<%--<script  src="js/myscripts.js"></script>--%>
 
 
 </body>

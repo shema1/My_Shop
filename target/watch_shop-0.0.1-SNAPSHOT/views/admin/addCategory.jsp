@@ -15,29 +15,85 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body class="color">
 
 
     <sf:form modelAttribute="Categoris" action="/addCategory" method="post">
        <div class="form-group">
            <label for="type">Category</label>
-        <input path="type" name="type" class="form-control"/>
+        <input type="text" path="type" name="type" class="form-control" placeholder="${categoryException}" />
        </div>
         <button  class=" btn-sm btn-success">ADD</button>
-        <strong class="alert alert-warning" role="alert">${categoryException}  </strong>
-        <%--<button>add</button>--%>
+        <%--<strong class="alert alert-warning" role="alert">${categoryException}  </strong>--%>
+
     </sf:form>
-<%--<form action="/addCategory" method="post">--%>
-<%--<input type="text" name="name">--%>
-<%--<button>add</button>--%>
-<%--<a href="/">home</a>--%>
-<%--</form>--%>
+
 <ol>
-<q:forEach var="ct" items="${Category}"> 
+<q:forEach var="ct" items="${Category}">
 <li>${ct.type}
     <a href="/deleteCategory/${ct.id}"> Delete</a>
 </li>
  </q:forEach>
  </ol>
+
+<%--<input  type="text" id="categoryName">--%>
+    <%--<button id="saveCategory">save</button>--%>
+
+
+    <%--<input type="hidden" name="csrf_name"--%>
+        <%--value="${_csrf.parameterName}"/>--%>
+
+
+    <%--<input type="hidden" name="csrf_value"--%>
+           <%--value="${_csrf.token}"/>--%>
+
+<%--<div >--%>
+<%--<table class="table table-hover">--%>
+    <%--<thead>--%>
+    <%--<tr>--%>
+        <%--<th>name</th>--%>
+    <%--</tr>--%>
+    <%--</thead>--%>
+    <%--<tbody id="result">--%>
+    <%--</tbody>--%>
+<%--</table>--%>
+
+<%--</div>--%>
+
+
 </body>
+
+<%--<script >--%>
+
+    <%--document.getElementById('saveCategory').onclick = function () {--%>
+    <%--}--%>
+
+    <%--$('#saveCategory').click(function () {--%>
+
+        <%--var category = {--%>
+            <%--type:$ ('#categoryName').val()--%>
+        <%--}--%>
+        <%--$.ajax({--%>
+            <%--url:"/addCategory?" + $('input[name=csrf_name]').val() + "=" + $('input[name=csrf_value]').val(),--%>
+            <%--method: 'POST',--%>
+            <%--dataType: 'json',--%>
+            <%--contentType: 'application/json; charset=UTF-8',--%>
+            <%--data: JSON.stringify(category),--%>
+
+            <%--success : function (res) {--%>
+                <%--var fromDb ='';--%>
+
+                <%--for(var i in res){--%>
+
+                    <%--fromDb += '<tr><td>'+res[i].type+ '</td></tr>';--%>
+                <%--}--%>
+
+                <%--$('#result').html(fromDb);--%>
+            <%--}--%>
+
+        <%--});--%>
+    <%--});--%>
+
+<%--</script>--%>
 </html>

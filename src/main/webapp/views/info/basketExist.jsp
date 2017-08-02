@@ -20,7 +20,7 @@
 
 <body class="bk">
 
-<div class="cen">basket exist</div>
+<div class="cen">Basket is empty</div>
 <div class="backk"> <a href="/">back</a></div>
 
 </body>

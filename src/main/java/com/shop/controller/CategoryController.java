@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import com.shop.entity.Category;
 import com.shop.service.CategoryService;
 
+import java.util.List;
+
 
 //____________________________________
 
@@ -28,8 +30,17 @@ public class CategoryController {
 
 				return "views-admin-addCategory";
 		}
-		
-	
+
+
+
+
+//	@PostMapping("/addCategory")
+//	public @ResponseBody
+//	List<Category> registrationCategory(@RequestBody Category category) throws Exception {
+//	categoryService.save(category);
+//	System.out.println("category = " + category);
+//	return categoryService.findAll();
+//	}
 		
 		@PostMapping("/addCategory")
 		public String registrationCategory(@ModelAttribute Category category,
@@ -48,7 +59,7 @@ public class CategoryController {
 		}
 		
 		@GetMapping("/deleteCategory/{id}")
-		public String delete (@PathVariable int id){
+		public  String delete (@PathVariable int id){
 			categoryService.delete(id);
 			return"redirect:/addCategory";
 		}

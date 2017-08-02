@@ -50,7 +50,7 @@
                      ${cm.price}
             </div>
             <div class="col-xs-4 col-sm-4 col-md-2">
-                <sec:authorize access="hasAnyRole('ROLE_USER, ROLE_ADMIN')">
+                <sec:authorize access="hasAnyRole('ROLE_USER')">
                 <a href="/inBasket/${cm.id}">| in basket |</a>
                 </sec:authorize>
             </div>

@@ -21,6 +21,6 @@
 <body class="bk">
 
 <div class="cen">Thank you for shopping</div>
-<div class="backk"> <a class="backk" href="/"></a>back</div>
+<div class="backk"> <a class="backk" href="/">back</a></div>
 
 </body>

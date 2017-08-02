@@ -48,7 +48,7 @@ public class OrderController {
 	public String buy (Principal principal, @PathVariable int id){
 
 		orderssService.inBasket(principal , id);
-		return "redirect:/";
+		return "views-base-goods";
 	}
 
 	@GetMapping("/deleteFromBasket/{userid}/{comid}")

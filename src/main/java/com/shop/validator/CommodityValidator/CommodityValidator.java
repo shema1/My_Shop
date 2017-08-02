@@ -28,6 +28,9 @@ public class CommodityValidator implements Validator {
         }else if(commodity.getPrice().isEmpty()){
             throw new  CommodityException(CommodityValidatorMessenges.EMPTY_PRICE_FIELD);
         }
+//        else if(commodity.getPathImage().isEmpty()){
+//            throw  new CommodityException(CommodityValidatorMessenges.SELECT_IMAGE);
+//        }
 
 
     }

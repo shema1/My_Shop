@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.shop.validator.CommodityValidator.CommodityException;
+import com.shop.validator.CommodityValidator.CommodityValidatorMessenges;
 import com.shop.validator.Validator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -34,14 +36,18 @@ public class CommodityServiceImpl implements CommodityService{
 	public void save(Commodity commodity, ArrayList<Integer> ids, MultipartFile image) throws Exception {
 		// TODO Auto-generated method stub
 //	Category category = categoryDao.findOne(id);
-     validator.validete(commodity);
+		if( image.isEmpty()){
+			throw  new CommodityException(CommodityValidatorMessenges.SELECT_IMAGE);
+		}else{
+
+		validator.validete(commodity);
 
 //	
 		commodityDao.saveAndFlush(commodity);
 
 		String path = System.getProperty("catalina.home") + "/resources/"
-				+ commodity.getName()  + "/" + image.getOriginalFilename();
-		commodity.setPathImage("resources/" + commodity.getName() + "/" + image.getOriginalFilename() );
+				+ commodity.getName() + "/" + image.getOriginalFilename();
+		commodity.setPathImage("resources/" + commodity.getName() + "/" + image.getOriginalFilename());
 
 		File filePath = new File(path);
 
@@ -60,7 +66,7 @@ public class CommodityServiceImpl implements CommodityService{
 		}
 
 		commodityDao.save(commodity);
-	
+	}
 	
 	}
 

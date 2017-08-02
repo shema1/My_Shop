@@ -16,6 +16,9 @@ import com.shop.service.CategoryService;
 import com.shop.service.CommodityService;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.shop.validator.CommodityValidator.CommodityException;
+import com.shop.validator.CommodityValidator.CommodityValidatorMessenges;
+
 import java.util.ArrayList;
 
 @Controller
@@ -64,6 +67,10 @@ public class CommodityController {
 				model.addAttribute("commodityPriceException",e.getMessage());
 
 			}
+			else  if (e.getMessage().equals(CommodityValidatorMessenges.SELECT_IMAGE)) {
+
+				model.addAttribute("commodityImageException", e.getMessage());
+			}
 			model.addAttribute("allCategory", categoryService.findAll());
 			model.addAttribute("allCommodity", commodityService.findAll());
 			model.addAttribute("Commoditis", new Commodity());
@@ -96,22 +103,46 @@ public class CommodityController {
 	public String updateCommodity(@PathVariable int commodityId,
 								  @RequestParam String name,
 								  @RequestParam String price,
-								  @RequestParam String info,
+
 								  @RequestParam ArrayList<Integer> ct,
-								  @RequestParam MultipartFile pathImage) {
+								  @RequestParam MultipartFile pathImage,
+								  Model model) {
 		Commodity commodity = new Commodity();
 		commodity.setId(commodityId);
 		commodity.setName(name);
 		commodity.setPrice(price);
-		commodity.setInfo(info);
 
+		model.addAttribute("allCategory", categoryService.findAll());
+		model.addAttribute("allCommodity", commodityService.findAll());
+		model.addAttribute("Commoditis", new Commodity());
 		try {
 			commodityService.save(commodity,ct,pathImage);
 		} catch (Exception e) {
-			e.printStackTrace();
-		}
+			if(e.getMessage().equals(CommodityValidatorMessenges.EMPTY_NAME_FIELD)){
+				model.addAttribute("commodityNameException2",e.getMessage());
 
-		return  "redirect:/addCommodity";
+			}
+			else  if (e.getMessage().equals(CommodityValidatorMessenges.EMPTY_PRICE_FIELD)) {
+
+				model.addAttribute("commodityPriceException2",e.getMessage());
+
+			}else  if (e.getMessage().equals(CommodityValidatorMessenges.SELECT_IMAGE)) {
+
+				model.addAttribute("commodityImageException2", e.getMessage());
+			}
+
+			model.addAttribute("allCategory", categoryService.findAll());
+			model.addAttribute("allCommodity", commodityService.findAll());
+			model.addAttribute("Commoditis", new Commodity());
+
+			return  "redirect:/addCommodity";
+		}
+		model.addAttribute("allCategory", categoryService.findAll());
+		model.addAttribute("allCommodity", commodityService.findAll());
+		model.addAttribute("Commoditis", new Commodity());
+//		return  "redirect:/addCommodity"";
+
+		return "redirect:/addCommodity";
 
 	}
 
