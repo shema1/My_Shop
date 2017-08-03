@@ -49,11 +49,13 @@ public class CommodityController {
 	public String registrationCommodity(@ModelAttribute Commodity commodity,
 										@RequestParam ArrayList<Integer> ct,
 										@RequestParam MultipartFile image,
-										Model model){
+										Model model) throws CommodityException {
 
 //		Category category = categoryService.findOne(ct);
 		
 		//asdfas
+
+
 
 		try {
 			commodityService.save(commodity,ct,image);
@@ -70,6 +72,10 @@ public class CommodityController {
 			else  if (e.getMessage().equals(CommodityValidatorMessenges.SELECT_IMAGE)) {
 
 				model.addAttribute("commodityImageException", e.getMessage());
+			}
+			else  if (e.getMessage().equals(CommodityValidatorMessenges.SELECT_CATEGORY)) {
+
+				model.addAttribute("commodityCategoryException", e.getMessage());
 			}
 			model.addAttribute("allCategory", categoryService.findAll());
 			model.addAttribute("allCommodity", commodityService.findAll());
@@ -119,23 +125,27 @@ public class CommodityController {
 			commodityService.save(commodity,ct,pathImage);
 		} catch (Exception e) {
 			if(e.getMessage().equals(CommodityValidatorMessenges.EMPTY_NAME_FIELD)){
-				model.addAttribute("commodityNameException2",e.getMessage());
+				model.addAttribute("commodityNameExceptionUp",e.getMessage());
 
 			}
 			else  if (e.getMessage().equals(CommodityValidatorMessenges.EMPTY_PRICE_FIELD)) {
 
-				model.addAttribute("commodityPriceException2",e.getMessage());
+				model.addAttribute("commodityPriceExceptionUp",e.getMessage());
 
 			}else  if (e.getMessage().equals(CommodityValidatorMessenges.SELECT_IMAGE)) {
 
-				model.addAttribute("commodityImageException2", e.getMessage());
+				model.addAttribute("commodityImageExceptionUp", e.getMessage());
+			}
+			else  if (e.getMessage().equals(CommodityValidatorMessenges.SELECT_CATEGORY)) {
+
+				model.addAttribute("commodityCategoryExceptionUp", e.getMessage());
 			}
 
 			model.addAttribute("allCategory", categoryService.findAll());
 			model.addAttribute("allCommodity", commodityService.findAll());
 			model.addAttribute("Commoditis", new Commodity());
 
-			return  "redirect:/addCommodity";
+			return  "views-admin-addCommodity";
 		}
 		model.addAttribute("allCategory", categoryService.findAll());
 		model.addAttribute("allCommodity", commodityService.findAll());

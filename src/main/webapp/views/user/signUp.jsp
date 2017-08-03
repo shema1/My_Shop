@@ -13,26 +13,7 @@
 
 </head>
 <body>
-<%--<div style="text-align: center;margin-top: 5%">--%>
-		<%--<form:form action="/signUp" method="post">--%>
-			<%--<input type="text" name="name" placeholder="name">--%>
-			<%--<br>--%>
-			<%--<input type="email" name="email" placeholder="email">--%>
-			<%--<br>--%>
-			<%--<input type="password" name="password" placeholder="password">--%>
-			<%--<br>--%>
-			<%--<button>sign up</button>--%>
-			<%--<a href="/">home</a>--%>
-			<%----%>
-			<%----%>
-		<%--</form:form>--%>
 
-			<%--<form:form action="/login" method="post">--%>
-				<%--<input name="username"   placeholder="Username">--%>
-				<%--<input name="password"   placeholder="Password">--%>
-				<%--<button>Login</button>--%>
-
-			<%--</form:form>--%>
 
 	</div>
 <img src="http://image005.flaticon.com/1/svg/74/74229.svg" alt="user icon" class="logo">

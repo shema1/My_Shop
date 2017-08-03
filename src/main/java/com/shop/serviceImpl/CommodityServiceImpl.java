@@ -38,7 +38,11 @@ public class CommodityServiceImpl implements CommodityService{
 //	Category category = categoryDao.findOne(id);
 		if( image.isEmpty()){
 			throw  new CommodityException(CommodityValidatorMessenges.SELECT_IMAGE);
-		}else{
+		}
+//		else if(ids == null){
+//			throw new  CommodityException(CommodityValidatorMessenges.SELECT_CATEGORY);
+//		}
+		else{
 
 		validator.validete(commodity);
 

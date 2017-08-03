@@ -57,7 +57,7 @@
 
 
 
-        </li>
+
     </c:forEach>
 </ul>
 </body>

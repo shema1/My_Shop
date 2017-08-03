@@ -53,9 +53,9 @@
 
 
 		<input name="image"  type="file" class="btn btn-sm btn-success fixInput" />
-	<div style="color: #DC3B3B" >${commodityImageException}</div>
+	<div style="color: #DC3B3B" >${commodityImageException} ${commodityCategoryException}</div>
 
-	<div style="color: #DC3B3B"> ${commodityNameException2} ${commodityPriceException2} ${commodityImageException2}</div>
+	<div style="color: #DC3B3B"> ${commodityNameExceptionUp} ${commodityPriceExceptionUp} ${commodityImageExceptionUp} ${commodityCategoryExceptionUp}</div>
 
 
 
@@ -87,7 +87,7 @@
 
 		<li class="row win">
 			<div class="col-xs-4 col-sm-4 col-md-4">
-					<img class="photo" src="${cm.pathImage}" alt="cm.pathImage">
+					<img class="photo" src="${cm.pathImage}" alt="photo">
 			</div>
 
 
