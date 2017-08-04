@@ -26,7 +26,7 @@
 	</nav>
 	<ul class="cd-tabs-content">
 		<li data-content="login" class="selected">
-			<form:form action="/login" method="post" name="login-form"   >
+			<form:form action="/login" method="post" name="login-form" onsubmit="return TestLogin1(this.username.value,this.password.value)"  >
 				<div class="form-fild">
 					<input type="text" placeholder="username" name="username" >
 				</div>
@@ -60,6 +60,38 @@
 		</li>
 	</ul>
 </div>
+
+	<script type="text/javascript">
+
+        function TestLogin1(username , password){
+
+            if(/^[a-zA-z]{1}[a-zA-Z1-9]{3,20}$/.test(username) === false)
+            {alert('Field username is empty'); return false;}
+
+            if(/^[a-zA-Z1-9]+$/.test(username) === false)
+            {alert('Only latin letters'); return false;}
+            if(username.length < 4 || username.length > 20)
+            { alert('The login must be between 4 and 20 characters'); return false;}
+            if(parseInt(username.substr(0, 1)))
+            {alert('Login must begin with a letter'); return false;}
+
+            if(/^[a-zA-z]{1}[a-zA-Z1-9]{3,20}$/.test(password) === false)
+            {alert('Field password is empty'); return false;}
+            return true;
+            return true;
+        }
+
+
+//        function TestLogin1(password){
+////            if(/^[a-zA-z]{1}[a-zA-Z1-9]{3,20}$/.test(username) === false)
+////            {alert('Field username is empty'); return false;}
+//
+//            if(/^[a-zA-z]{1}[a-zA-Z1-9]{3,20}$/.test(password) === false)
+//            {alert('Field password is empty'); return false;}
+//            return true;
+//        }
+
+	</script>
 </body>
 </html>
 
