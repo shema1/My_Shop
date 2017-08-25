@@ -11,7 +11,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="/js/index.js"></script>
 </head>
-<h1>BEST CHANGE</h1>
+<h1>WELCOME</h1>
 <div id="slider">
     <a href="#" class="control_next">></a>
     <a href="#" class="control_prev"><</a>
@@ -28,6 +28,10 @@
 </div>
 
 
+<%--<c:forEach var="cm" items="${allCommoditys.content}">--%>
+    <%--<li>  <img class="photo" src="${cm.pathImage}" alt="cm.pathImage"> </li>--%>
+
+<%--</c:forEach>--%>
 
 
 </html>

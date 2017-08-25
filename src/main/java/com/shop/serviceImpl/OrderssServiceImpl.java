@@ -64,6 +64,8 @@ public class OrderssServiceImpl implements OrderssService {
 	public void inBasket(Principal principal, int id) {
 		User user = userDao.findUserWithCommodity(Integer.parseInt(principal.getName()));
 		Commodity commodity = commodityDao.findOne(id);
+
+
 		user.getCommodities().add(commodity);
 
 		userDao.save(user);
@@ -86,7 +88,8 @@ public class OrderssServiceImpl implements OrderssService {
 			orderssDao.save(orderss);
 		}
 
-		user.getCommodities().clear();userDao.save(user);
+		user.getCommodities().clear();
+			userDao.save(user);
 
 	}
 

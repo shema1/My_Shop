@@ -145,12 +145,15 @@ public class CommodityController {
 			model.addAttribute("allCommodity", commodityService.findAll());
 			model.addAttribute("Commoditis", new Commodity());
 
-			return  "views-admin-addCommodity";
+//			return  "views-admin-addCommodity";      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			return "redirect:/addCommodity";
 		}
 		model.addAttribute("allCategory", categoryService.findAll());
 		model.addAttribute("allCommodity", commodityService.findAll());
 		model.addAttribute("Commoditis", new Commodity());
-//		return  "redirect:/addCommodity"";
+
+
+//		return  "views-admin-addCommodity";
 
 		return "redirect:/addCommodity";
 

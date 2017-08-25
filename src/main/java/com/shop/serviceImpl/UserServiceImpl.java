@@ -43,6 +43,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 		user.setRole(Role.ROLE_USER);
 		user.setPassword(encoder.encode(user.getPassword()));
 		userDao.save(user);
+
 	}
 
 	public List<User> findAll() {

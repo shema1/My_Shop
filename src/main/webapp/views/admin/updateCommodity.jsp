@@ -21,7 +21,8 @@
 <link rel="stylesheet" href="/css/addComodity.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <body class="back">
-<form:form modelAttribute="commodity"  action="/updateCommodity/${commodity.id}?${_csrf.parameterName}=${_csrf.token}" method="post" enctype="multipart/form-data">
+<form:form modelAttribute="commodity"  action="/updateCommodity/${commodity.id}?${_csrf.parameterName}=${_csrf.token}" method="post" enctype="multipart/form-data"
+           onsubmit="return image(this.pathImage.value, this.name.value, this.price.value)">
 
     <div class="form-group">
         <label for="name">Name</label>
@@ -41,7 +42,30 @@
         </c:forEach>
     </select>
     <input name="pathImage" class="btn btn-sm btn-success fixInput"  type="file" value="${commodity.pathImage}"/>
-    <button class=" btn-sm btn-success" style="margin-left: 1%" >save</button>
+    <button class=" btn-sm btn-success" style="margin-left: 1%" type="submit" >save</button>
 </form:form >
+
+<script type="text/javascript">
+
+
+    function image (pathImage, name, price) {
+
+
+        if(name.length < 1 || name.length > 20)
+        { alert('Field name is empty'); return false;}
+
+        if(price.length < 1 || name.length > 20)
+        { alert('Field price is empty'); return false;}
+
+        if(/^[1-9]+$/.test(price) === false)
+        {alert('Only numbers'); return false;}
+
+        if(pathImage.equals(null)){
+            alert('select image'); return false;
+        }
+    }
+
+</script>
+
 
 </body>

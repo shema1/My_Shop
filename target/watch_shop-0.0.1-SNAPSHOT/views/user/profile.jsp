@@ -33,6 +33,9 @@
 <ul>
     <c:forEach var="history" items="${selUser.ordersses}">
 
+        <%--<div class="col-xs-4 col-sm-3 col-md-3">--%>
+        <%--${history.name}--%>
+        <%--</div>--%>
 
 
             <c:forEach var="a" items="${history.commoditys}">
@@ -51,7 +54,7 @@
                 <div class="col-xs-4 col-sm-2 col-md-2">
                         ${history.date}
                 </div>
-
+                </li>
             </c:forEach>
 
 

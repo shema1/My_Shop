@@ -5,6 +5,7 @@ package com.shop.validator.CategoryValidation;
  */
 public class CategoryException extends Exception {
     public CategoryException(String message) {
+
         super(message);
     }
 }

@@ -53,9 +53,9 @@
 
 
 		<input name="image"  type="file" class="btn btn-sm btn-success fixInput" />
-	<div style="color: #DC3B3B" >${commodityImageException} ${commodityCategoryException}</div>
+	<div  class="mr" style="color: #DC3B3B" >${commodityImageException} ${commodityCategoryException}</div>
 
-	<div style="color: #DC3B3B"> ${commodityNameExceptionUp} ${commodityPriceExceptionUp} ${commodityImageExceptionUp} ${commodityCategoryExceptionUp}</div>
+	<div class="mr" style=" color: #DC3B3B"> ${commodityNameExceptionUp} ${commodityPriceExceptionUp} ${commodityImageExceptionUp} ${commodityCategoryExceptionUp}</div>
 
 
 

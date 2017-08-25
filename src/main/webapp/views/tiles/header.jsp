@@ -47,7 +47,10 @@
 <header class="header bor" role="banner">
     <link rel="stylesheet" href="/css/header.css">
 
-    <nav>
+    <span><a href="?lang=ua"><img class="ph" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1280px-Flag_of_Ukraine.svg.png" alt="cm.pathImage"></a></span>
+    <span><a href="?lang=en"><img class="ph" src="https://www.chaspik.ua/media/products/27084/image.jpg" alt=""></a></span>
+    <nav class="nv">
+
         <ul>
             <li class="active">
                 <a href="/"><spring:message code="label.Home" /> </a>
@@ -79,10 +82,13 @@
 
             </sec:authorize>
 
-<span style="float: right">
-                        <li><a href="?lang=ua">ua</a></li>
-                        <li><a href="?lang=en">en</a></li>
-</span>
+<%--<span style="float: left">--%>
+                        <%--&lt;%&ndash;<li><a href="?lang=ua">ua</a></li>&ndash;%&gt;--%>
+                        <%--&lt;%&ndash;<li><a href="?lang=en">en</a></li>&ndash;%&gt;--%>
+
+    <%--<span><a href="?lang=ua"><img class="ph" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1280px-Flag_of_Ukraine.svg.png" alt="cm.pathImage"></a></span>--%>
+    <%--<span><a href="?lang=en"><img url="" alt=""></a></span>--%>
+<%--</span>--%>
             <sec:authorize access="isAuthenticated()">
                 <li class="active">
                     <form:form action="/logout" method="post" cssStyle="float: right">

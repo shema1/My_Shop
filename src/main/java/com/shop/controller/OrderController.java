@@ -3,6 +3,7 @@ package com.shop.controller;
 import java.security.Principal;
 import java.time.LocalDate;
 
+import com.shop.entity.Commodity;
 import com.shop.entity.User;
 import com.shop.validator.UserValidator.UserValidatorMessenges;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,18 +46,36 @@ public class OrderController {
 	}
 
 	@GetMapping("/inBasket/{id}")
-	public String buy (Principal principal, @PathVariable int id){
+	public String buy (Principal principal, @PathVariable int id, Model model){
 
-		orderssService.inBasket(principal , id);
-		return "views-base-goods";
+
+		model.addAttribute("user",userService.findUserWithCommodity(Integer.parseInt(principal.getName())));
+		model.addAttribute("selCommodity", commodityService.findAll() );
+
+		User user = userService.findUserWithCommodity(Integer.parseInt(principal.getName()));
+		Commodity commodity = commodityService.findOne(id);
+		if(user.getCommodities().contains(commodity)){
+			return "views-info-alreadyInBasket";
+		}else{
+			orderssService.inBasket(principal , id);
+			return "views-base-goods";
+		}
+
+
 	}
 
 	@GetMapping("/deleteFromBasket/{userid}/{comid}")
 public String deleteFromBasket (@PathVariable int userid,
-								@PathVariable int comid){
+								@PathVariable int comid,
+								Model model){
+
+		model.addAttribute("Order", orderssService.findAll());
+		model.addAttribute("selCommodity", commodityService.findAll() );
+
 
 		orderssService.deleteFromBasket(userid, comid);
-		return "redirect:/";
+		return "redirect:/addOrder";
+//		return "views-user-addOrder";
 	}
 
 
